@@ -7,7 +7,7 @@ const WA_LINK =
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="relative bg-white pt-24 lg:pt-32 pb-16 lg:pb-24 overflow-hidden">
+    <section id="inicio" className="relative bg-white pt-16 lg:pt-20 pb-12 lg:pb-20 overflow-hidden">
       
       {/* Background Decorativo Suave */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
