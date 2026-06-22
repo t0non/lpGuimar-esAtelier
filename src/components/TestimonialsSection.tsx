@@ -80,6 +80,7 @@ export default function TestimonialsSection() {
 
               {/* Cliente */}
               <div className="flex items-center gap-4 mb-4">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
                   src={review.image} 
                   alt={review.name} 
@@ -92,7 +93,7 @@ export default function TestimonialsSection() {
 
               {/* Depoimento */}
               <p className="text-[15px] leading-relaxed italic" style={{ color: '#666666' }}>
-                "{review.text}"
+                &quot;{review.text}&quot;
               </p>
             </div>
           ))}
