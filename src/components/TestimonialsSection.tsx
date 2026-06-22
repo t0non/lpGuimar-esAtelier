@@ -139,25 +139,37 @@ export default function TestimonialsSection() {
         {/* Cabeçalho */}
         <div className="max-w-3xl mx-auto text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4" style={{ color: '#1A1A1A' }}>
-            Avaliações de{' '}
+            Clientes que confiam na{' '}
             <span style={{ color: '#C6A15B' }}>
-              clientes
+              Guimarães há anos
             </span>
           </h2>
           <p
             className="text-base sm:text-lg leading-relaxed"
             style={{ color: '#555555' }}
           >
-            Atendimento, qualidade e produção sob demanda para quem precisa de
-            bordados, estampas, DTF e personalizados com segurança.
+            Atendimento, qualidade e compromisso para quem precisa de bordados, estampas, DTF e personalizados em Belo Horizonte.
           </p>
+        {/* Destaques */}
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mt-8 mb-12">
+          {[
+            '★★★★★ Avaliações reais de clientes',
+            'Atendimento direto',
+            'Clientes recorrentes',
+            'Produção com confiança'
+          ].map((item, idx) => (
+            <span key={idx} className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold px-4 py-2 rounded-full"
+              style={{ background: 'rgba(198,161,91,0.1)', color: '#C6A15B' }}>
+              {item}
+            </span>
+          ))}
         </div>
       </div>
 
       {/* Marquee — ocupa a largura total, sem container */}
       <div className="flex flex-col gap-6 mb-16">
-        <MarqueeRow reviews={ROW_1} direction="left" speed={40} />
-        <MarqueeRow reviews={ROW_2} direction="right" speed={45} />
+        <MarqueeRow reviews={ROW_1} direction="right" speed={40} />
+        <MarqueeRow reviews={ROW_2} direction="left" speed={45} />
       </div>
 
       {/* CTA */}
@@ -167,7 +179,7 @@ export default function TestimonialsSection() {
             className="text-xl sm:text-2xl font-bold mb-6"
             style={{ color: '#1A1A1A' }}
           >
-            Quer produzir com quem já tem a confiança dos clientes?
+            Também quero produzir com a Guimarães
           </h3>
           <a
             id="testimonials-cta-whatsapp"
@@ -192,7 +204,7 @@ export default function TestimonialsSection() {
             }}
           >
             <WhatsAppIcon size={22} />
-            Enviar Arte e Consultar Valores
+            Também quero produzir com a Guimarães
           </a>
         </div>
       </div>
