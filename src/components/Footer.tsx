@@ -30,17 +30,18 @@ export default function Footer() {
             <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.38)' }}>
               Bordados, estampas, impressão DTF, DTF UV e personalização sob demanda em Belo Horizonte. Atendimento pelo WhatsApp.
             </p>
-            <a
-              href="https://maps.google.com/?q=Galeria+Ouvidor+R.+São+Paulo+Loja+50A+1+andar+Centro+Belo+Horizonte+MG"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm leading-relaxed hover:text-white transition-colors w-fit"
-              style={{ color: 'rgba(255,255,255,0.40)' }}
-            >
-              📍 Galeria Ouvidor — R. São Paulo, Loja 50A,<br />
-              1º andar — Centro, Belo Horizonte — MG<br />
-              CEP: 30170-130
-            </a>
+            <address className="not-italic text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.40)' }}>
+              <a
+                href="https://maps.google.com/?q=Galeria+Ouvidor+R.+São+Paulo+Loja+50A+1+andar+Centro+Belo+Horizonte+MG"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors block w-fit"
+              >
+                📍 Galeria Ouvidor — R. São Paulo, Loja 50A,<br />
+                1º andar — Centro, Belo Horizonte — MG<br />
+                CEP: 30170-130
+              </a>
+            </address>
           </div>
 
           {/* Coluna 2 — Links */}
