@@ -6,18 +6,16 @@ const WA_LINK =
 const STEPS = [
   {
     number: '01',
-    title: 'Chame no WhatsApp',
-    text: 'Envie sua arte, medida desejada e conte onde pretende aplicar o DTF.',
+    title: 'Envie sua arte',
+    text: 'Mande o arquivo, medida desejada, quantidade e onde pretende aplicar.',
     icon: <WhatsAppIcon size={28} />,
     color: '#25D366',
-    bg: 'linear-gradient(135deg, rgba(37,211,102,0.15) 0%, rgba(37,211,102,0.05) 100%)',
   },
   {
     number: '02',
-    title: 'Aprove o orçamento',
-    text: 'Nossa equipe avalia o material, orienta o melhor formato e envia valores com prazo.',
-    color: '#25D366',
-    bg: 'linear-gradient(135deg, rgba(37,211,102,0.15) 0%, rgba(37,211,102,0.05) 100%)',
+    title: 'Receba a orientação',
+    text: 'A equipe avalia o material, confere a viabilidade e informa prazo e orçamento.',
+    color: '#C6A15B',
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
@@ -27,8 +25,8 @@ const STEPS = [
   },
   {
     number: '03',
-    title: 'Receba seu pedido',
-    text: 'Após a aprovação, produzimos seu material e combinamos retirada, envio ou entrega.',
+    title: 'Aprove e produza',
+    text: 'Com tudo definido, seu pedido entra em produção e a retirada, entrega ou envio é combinado.',
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <line x1="16.5" y1="9.4" x2="7.5" y2="4.21" />
@@ -56,13 +54,13 @@ export default function ProcessSection() {
             Como funciona
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-5" style={{ color: '#1A1A1A' }}>
-            Do orçamento à produção,{' '}
+            Como pedir seu orçamento{' '}
             <span style={{ color: '#C6A15B' }}>
-              tudo pelo WhatsApp
+              pelo WhatsApp
             </span>
           </h2>
           <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#666666' }}>
-            Você envia sua arte, recebe orientação da equipe e aprova seu pedido de forma simples, rápida e sem complicação.
+            Um processo simples para quem quer produzir DTF, DTF UV, bordados ou personalizados sem complicação.
           </p>
         </div>
 
@@ -130,7 +128,7 @@ export default function ProcessSection() {
             }}
           >
             <WhatsAppIcon size={20} />
-            Enviar Arte Pelo WhatsApp
+            Pedir Orçamento no WhatsApp
           </a>
         </div>
 

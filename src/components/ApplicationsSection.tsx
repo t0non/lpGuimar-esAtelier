@@ -7,57 +7,57 @@ const APPLICATIONS = [
     img: '/images/app_camisetas.png',
     tag: 'Camisetas',
     tagAccent: '#C6A15B',
-    title: 'DTF para camisetas personalizadas',
-    text: 'Estampas sob demanda para coleções, eventos e personalizados em Belo Horizonte.',
+    title: 'DTF para camisetas',
+    text: 'Estampas para coleções, eventos, peças promocionais e personalizados.',
   },
   {
     img: '/images/app_uniformes.png',
     tag: 'Uniformes',
     tagAccent: '#3B82F6',
-    title: 'DTF para uniformes corporativos',
-    text: 'Logos, nomes e equipes em uniformes personalizados sob demanda.',
+    title: 'DTF para uniformes',
+    text: 'Logos, nomes, equipes e peças corporativas com acabamento profissional.',
   },
   {
     img: '/images/app_marcas.png',
     tag: 'Marcas',
     tagAccent: '#8B5CF6',
     title: 'DTF para marcas de roupa',
-    text: 'Produza coleções sem estoque parado e teste novos designs.',
+    text: 'Teste estampas, produza reposições e venda sem manter estoque parado.',
   },
   {
     img: '/images/app_estamparia.png',
     tag: 'Estamparias',
     tagAccent: '#EC4899',
     title: 'DTF para estamparias',
-    text: 'Terceirize a impressão e foque na venda e aplicação final.',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?q=80&w=800&auto=format&fit=crop',
-    tag: 'Por metro',
-    tagAccent: '#F97316',
-    title: 'DTF por metro',
-    text: 'Várias artes em uma produção, otimizando espaço e custo.',
+    text: 'Terceirize a impressão e mantenha o foco na venda, aplicação e entrega.',
   },
   {
     img: 'https://images.unsplash.com/photo-1586776977607-310e9c725c35?q=80&w=800&auto=format&fit=crop',
     tag: 'Revenda',
     tagAccent: '#10B981',
     title: 'DTF para revenda',
-    text: 'Fornecimento para demandas recorrentes e pedidos contínuos.',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=800&auto=format&fit=crop',
-    tag: 'Transfer',
-    tagAccent: '#E8A020',
-    title: 'Transfer DTF personalizado',
-    text: 'Camisetas, ecobags, moletons e brindes com estampa de qualidade.',
+    text: 'Atendimento para pedidos recorrentes, personalizados e demandas contínuas.',
   },
   {
     img: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?q=80&w=800&auto=format&fit=crop',
+    tag: 'DTF UV',
+    tagAccent: '#E8A020',
+    title: 'DTF UV para brindes',
+    text: 'Personalização para brindes, materiais promocionais e superfícies compatíveis.',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?q=80&w=800&auto=format&fit=crop',
+    tag: 'Bordados',
+    tagAccent: '#F97316',
+    title: 'Bordados personalizados',
+    text: 'Bordados para uniformes, jalecos, peças profissionais e identidade visual.',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=800&auto=format&fit=crop',
     tag: 'Brindes',
     tagAccent: '#06B6D4',
     title: 'Brindes e personalizados',
-    text: 'Canecas, garrafas, bonés e peças promocionais com identidade visual.',
+    text: 'Canecas, bonés, ecobags, garrafas e peças criativas para empresas e eventos.',
   },
 ]
 
@@ -168,13 +168,13 @@ export default function ApplicationsSection() {
             Aplicações
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4" style={{ color: '#1A1A1A' }}>
-            Aplicações da impressão DTF para{' '}
+            DTF para camisetas, uniformes, brindes e{' '}
             <span style={{ color: '#C6A15B' }}>
-              todo tipo de demanda
+              revenda
             </span>
           </h2>
           <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#666666' }}>
-            Uma solução versátil para quem vende, produz ou precisa personalizar peças sob demanda.
+            Uma solução prática para quem vende personalizados, produz sob demanda ou precisa terceirizar a impressão com segurança.
           </p>
         </div>
 

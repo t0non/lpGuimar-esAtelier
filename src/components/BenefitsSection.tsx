@@ -1,40 +1,30 @@
 'use client'
 
-import { Palette, PackageCheck, Repeat2, MessageCircle, Cpu, Calculator } from 'lucide-react'
+import { ShieldCheck, Smartphone, Repeat, CheckCircle } from 'lucide-react'
 
 const WA_LINK =
   'https://wa.me/553130161790?text=Ol%C3%A1%21%20Quero%20fazer%20um%20or%C3%A7amento%20de%20impress%C3%A3o%20DTF.%20Tenho%20uma%20arte%20para%20enviar.'
 
 const BENEFITS = [
   {
-    icon: Palette,
-    title: 'Estampas com cores vivas',
-    text: 'Valorize camisetas, uniformes e personalizados com impressão de boa definição.',
+    icon: CheckCircle,
+    title: 'Menos erro na produção',
+    text: 'A equipe avalia sua arte antes de seguir com o pedido.',
   },
   {
-    icon: PackageCheck,
-    title: 'Produza apenas quando precisar',
-    text: 'Evite estoque parado e produza conforme sua venda, campanha ou demanda.',
+    icon: Smartphone,
+    title: 'Mais praticidade',
+    text: 'Tudo acontece pelo WhatsApp, da primeira dúvida até a aprovação.',
   },
   {
-    icon: Repeat2,
-    title: 'Pedidos avulsos e recorrentes',
-    text: 'Atendimento para quem precisa de uma peça, uma reposição ou produção contínua.',
+    icon: Repeat,
+    title: 'Mais flexibilidade',
+    text: 'Atendimento para pedidos pequenos, recorrentes e demandas de revenda.',
   },
   {
-    icon: MessageCircle,
-    title: 'Atendimento direto pelo WhatsApp',
-    text: 'Envie sua arte, tire dúvidas e receba orientação antes da produção.',
-  },
-  {
-    icon: Cpu,
-    title: 'Venda sem comprar impressora',
-    text: 'Terceirize a impressão DTF e foque em vender, aplicar e entregar.',
-  },
-  {
-    icon: Calculator,
-    title: 'Orçamento conforme sua arte',
-    text: 'Valores calculados conforme metragem, tamanho, quantidade e tipo de produção.',
+    icon: ShieldCheck,
+    title: 'Mais segurança',
+    text: 'Você recebe orientação, prazo e valores antes da produção.',
   },
 ]
 
@@ -49,37 +39,22 @@ export default function BenefitsSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Cabeçalho */}
-        <div className="max-w-2xl mx-auto text-center mb-12">
+        <div className="max-w-3xl mx-auto text-center mb-12">
           <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5"
             style={{ background: 'rgba(198,161,91,0.15)', color: '#C6A15B', border: '1px solid rgba(198,161,91,0.20)' }}>
-            Por que escolher
+            Mecanismo
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4 text-white">
-            Por que produzir com a{' '}
-            <span className="inline-flex items-center gap-0.5" style={{ verticalAlign: 'middle' }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/Logo_Atelier.png"
-                alt="Guimarães"
-                className="w-auto object-contain"
-                style={{
-                  filter: 'brightness(0) invert(1)',
-                  height: 'clamp(28px, 4vw, 44px)',
-                  display: 'inline-block',
-                  verticalAlign: 'middle',
-                  marginBottom: '2px',
-                }}
-              />
-              <span className="text-white">?</span>
-            </span>
+            Do arquivo à produção, tudo com{' '}
+            <span style={{ color: '#C6A15B' }}>orientação da equipe</span>
           </h2>
           <p className="text-base sm:text-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            Mais do que imprimir estampas, a Guimarães ajuda sua produção a sair do papel com atendimento direto, orientação e orçamento sob medida.
+            Você não precisa adivinhar formato, metragem ou aplicação. Envie sua arte, explique sua demanda e receba um orçamento orientado antes de produzir.
           </p>
         </div>
 
         {/* Grid de benefícios */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 max-w-4xl mx-auto gap-4 mb-12">
           {BENEFITS.map(({ icon: Icon, title, text }) => (
             <div
               key={title}
@@ -129,7 +104,7 @@ export default function BenefitsSection() {
             }}
           >
             <WhatsAppIcon size={20} />
-            Enviar minha arte para orçamento
+            Enviar Arte para Avaliação
           </a>
         </div>
       </div>

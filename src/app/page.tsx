@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import BenefitsSection from '@/components/BenefitsSection'
 import ProcessSection from '@/components/ProcessSection'
+import AudienceSection from '@/components/AudienceSection'
 import ApplicationsSection from '@/components/ApplicationsSection'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import FAQSection from '@/components/FAQSection'
@@ -17,6 +18,7 @@ export default function Home() {
       <BenefitsSection />
       <ProcessSection />
       <ApplicationsSection />
+      <AudienceSection />
       <TestimonialsSection />
       <FAQSection />
       <FinalCTASection />

@@ -1,106 +1,94 @@
-'use client'
+import React from 'react'
+import { Briefcase, Building2, Store, Users, Calendar, Palette } from 'lucide-react'
 
-import { Shirt, Layers, Building2, Store, Gift, Star } from 'lucide-react'
-
-const AUDIENCE_CARDS = [
+const AUDIENCE = [
   {
-    icon: Shirt,
-    title: 'Produza coleções sem estoque parado',
-    text: 'Teste estampas, faça reposições e venda peças personalizadas sem depender de máquina própria.',
+    title: 'Marcas de roupa',
+    desc: 'Produza coleções sem travar dinheiro em estoque.',
+    icon: <Store size={24} />,
   },
   {
-    icon: Layers,
-    title: 'Terceirize a impressão DTF',
-    text: 'Você vende, aplica e entrega. A Guimarães cuida da produção com orientação e atendimento direto.',
+    title: 'Estamparias',
+    desc: 'Tenha uma parceira para terceirizar a impressão DTF.',
+    icon: <Palette size={24} />,
   },
   {
-    icon: Building2,
-    title: 'Uniformes personalizados',
-    text: 'Produza camisetas, polos, logos, nomes e peças corporativas sob demanda em Belo Horizonte.',
+    title: 'Empresas',
+    desc: 'Faça uniformes, brindes e peças promocionais sob demanda.',
+    icon: <Building2 size={24} />,
   },
   {
-    icon: Store,
-    title: 'Fornecedor para pedidos recorrentes',
-    text: 'Tenha apoio para demandas avulsas, reposições e produções contínuas de DTF.',
+    title: 'Revendedores',
+    desc: 'Atenda mais pedidos sem depender de estrutura própria.',
+    icon: <Briefcase size={24} />,
   },
   {
-    icon: Gift,
-    title: 'Peças criativas sob demanda',
-    text: 'Personalize camisetas, ecobags, bonés, brindes e materiais promocionais com DTF e DTF UV.',
+    title: 'Eventos',
+    desc: 'Produza camisetas, brindes e materiais personalizados para ações pontuais.',
+    icon: <Calendar size={24} />,
   },
   {
-    icon: Star,
-    title: 'Produção para ações e eventos',
-    text: 'Soluções personalizadas para campanhas, equipes, eventos e pequenas produções.',
+    title: 'Personalizados',
+    desc: 'Transforme ideias, artes e demandas dos clientes em peças prontas para venda.',
+    icon: <Users size={24} />,
   },
 ]
 
 export default function AudienceSection() {
   return (
-    <section
-      id="para-quem-e"
-      className="py-16 sm:py-24"
-      style={{ backgroundColor: '#FFFFFF' }}
-    >
+    <section className="py-12 sm:py-20 lg:py-32" style={{ backgroundColor: '#F9F8F5' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
+        
         {/* Cabeçalho */}
-        <div className="max-w-2xl mx-auto text-center mb-12">
-          <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5"
-            style={{ background: 'rgba(198,161,91,0.15)', color: '#C6A15B', border: '1px solid rgba(198,161,91,0.25)' }}>
-            Para quem é
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <span
+            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5"
+            style={{
+              background: 'rgba(198,161,91,0.12)',
+              color: '#C6A15B',
+              border: '1px solid rgba(198,161,91,0.25)',
+            }}
+          >
+            Para Quem É
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4"
-            style={{ color: '#1A1A1A' }}>
-            DTF para quem vende, personaliza{' '}
-            <span style={{
-              background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}>
-              ou revende
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4" style={{ color: '#1A1A1A' }}>
+            Para quem precisa produzir{' '}
+            <span style={{ color: '#C6A15B' }}>
+              sem comprar máquina
             </span>
           </h2>
           <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#666666' }}>
-            Produza sob demanda sem comprar impressora, sem manter estoque parado e sem perder venda por falta de fornecedor.
+            A Guimarães ajuda marcas, empresas, estamparias e revendedores a transformarem arte em produto com atendimento direto pelo WhatsApp.
           </p>
         </div>
 
-        {/* Grid de cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {AUDIENCE_CARDS.map(({ icon: Icon, title, text }) => (
+        {/* Grid de Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {AUDIENCE.map((item, idx) => (
             <div
-              key={title}
-              className="group flex flex-col gap-4 p-6 sm:p-7 rounded-2xl transition-all duration-300 cursor-default"
+              key={idx}
+              className="flex flex-col p-8 rounded-2xl transition-transform duration-300 hover:-translate-y-1"
               style={{
                 backgroundColor: '#FFFFFF',
-                border: '1px solid rgba(0,0,0,0.07)',
-                boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04)',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.08), 0 12px 32px rgba(0,0,0,0.07)'
-                e.currentTarget.style.transform = 'translateY(-3px)'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04)'
-                e.currentTarget.style.transform = 'translateY(0)'
+                boxShadow: '0 2px 12px rgba(0,0,0,0.03)',
               }}
             >
-              {/* Ícone */}
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{ background: 'linear-gradient(135deg, rgba(198,161,91,0.15) 0%, rgba(232,201,122,0.10) 100%)' }}>
-                <Icon size={20} strokeWidth={2} style={{ color: '#C6A15B' }} />
+              <div 
+                className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                style={{ background: 'rgba(198,161,91,0.15)', color: '#C6A15B' }}
+              >
+                {item.icon}
               </div>
-
-              {/* Texto */}
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold" style={{ color: '#1A1A1A' }}>{title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#666666' }}>{text}</p>
-              </div>
+              <h3 className="text-xl font-bold mb-3" style={{ color: '#1A1A1A' }}>
+                {item.title}
+              </h3>
+              <p className="text-sm leading-relaxed" style={{ color: '#666666' }}>
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   )

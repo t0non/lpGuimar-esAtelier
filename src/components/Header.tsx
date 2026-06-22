@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { label: 'Início', href: '#inicio' },
   { label: 'Aplicações', href: '#aplicacoes' },
   { label: 'Como funciona', href: '#como-funciona' },
+  { label: 'Avaliações', href: '#avaliacoes' },
   { label: 'FAQ', href: '#faq' },
 ]
 
