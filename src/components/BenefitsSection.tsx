@@ -42,12 +42,9 @@ export default function BenefitsSection() {
   return (
     <section
       id="beneficios"
-      className="py-16 sm:py-24 relative overflow-hidden"
-      style={{ backgroundColor: '#1A1A1A' }}
+      className="py-20 sm:py-32 relative overflow-hidden"
+      style={{ backgroundColor: '#111827' }}
     >
-      {/* Glow dourado de fundo */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0"
-        style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(198,161,91,0.10) 0%, transparent 70%)' }} />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -88,16 +85,13 @@ export default function BenefitsSection() {
               key={title}
               className="flex gap-4 p-6 rounded-2xl transition-all duration-300"
               style={{
-                background: 'rgba(255,255,255,0.04)',
-                border: '1px solid rgba(255,255,255,0.07)',
+                background: 'rgba(255,255,255,0.02)',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(198,161,91,0.07)'
-                e.currentTarget.style.border = '1px solid rgba(198,161,91,0.20)'
+                e.currentTarget.style.background = 'rgba(255,255,255,0.05)'
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(255,255,255,0.04)'
-                e.currentTarget.style.border = '1px solid rgba(255,255,255,0.07)'
+                e.currentTarget.style.background = 'rgba(255,255,255,0.02)'
               }}
             >
               <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"

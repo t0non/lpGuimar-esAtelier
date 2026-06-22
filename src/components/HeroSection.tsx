@@ -46,7 +46,7 @@ export default function HeroSection() {
       />
 
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
           {/* ══════════════════════════════════════
@@ -75,19 +75,12 @@ export default function HeroSection() {
             {/* H1 — direto e conversivo */}
             <h1
               className="text-4xl sm:text-5xl lg:text-[50px] font-extrabold tracking-tight"
-              style={{ color: '#1A1A1A', lineHeight: '1.10' }}
+              style={{ color: '#111827', lineHeight: '1.10' }}
             >
               Impressão DTF e DTF UV Sob Demanda{' '}
               <span className="block mt-1">
                 em{' '}
-                <span
-                  style={{
-                    background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 50%, #B8903F 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                  }}
-                >
+                <span style={{ color: '#C6A15B' }}>
                   Belo Horizonte
                 </span>
               </span>
@@ -96,7 +89,7 @@ export default function HeroSection() {
             {/* Subheadline */}
             <p
               className="text-base sm:text-lg leading-relaxed max-w-xl"
-              style={{ color: '#555555' }}
+              style={{ color: '#4B5563' }}
             >
               Envie sua arte pelo WhatsApp e receba orientação, prazo e orçamento para camisetas,
               uniformes, brindes, personalizados e revenda com a Guimarães Bordados &amp; Estampas.
@@ -163,29 +156,22 @@ export default function HeroSection() {
               Orçamento pelo WhatsApp&nbsp;•&nbsp;Pedidos avulsos e recorrentes&nbsp;•&nbsp;Atendimento para empresas e revendedores
             </p>
 
-            {/* Selos comerciais */}
-            <div
-              className="grid grid-cols-2 gap-2.5 pt-1"
-            >
-              {SEALS.map(({ icon, label }) => (
-                <div
-                  key={label}
-                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl"
+            <div className="flex flex-wrap gap-3 items-center pt-3">
+              {[
+                'Sem pedido mínimo',
+                'Orçamento na hora',
+                'Atendimento direto',
+              ].map((badge) => (
+                <span
+                  key={badge}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold"
                   style={{
-                    background: 'rgba(255,255,255,0.70)',
-                    border: '1px solid rgba(198,161,91,0.15)',
+                    backgroundColor: 'rgba(0,0,0,0.03)',
+                    color: '#4B5563',
                   }}
                 >
-                  <span
-                    className="flex-shrink-0 w-6 h-6 rounded-lg flex items-center justify-center"
-                    style={{ background: 'rgba(198,161,91,0.14)' }}
-                  >
-                    {icon}
-                  </span>
-                  <span className="text-[11px] font-semibold leading-tight" style={{ color: '#444444' }}>
-                    {label}
-                  </span>
-                </div>
+                  {badge}
+                </span>
               ))}
             </div>
           </div>

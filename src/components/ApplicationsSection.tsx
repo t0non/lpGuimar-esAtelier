@@ -69,21 +69,18 @@ function AppCard({
 
   return (
     <div
-      className="group flex flex-col overflow-hidden rounded-2xl transition-all duration-300 cursor-default"
+      className="group relative overflow-hidden rounded-2xl flex flex-col transition-all duration-300"
       style={{
         backgroundColor: '#FFFFFF',
-        border: '1px solid rgba(0,0,0,0.07)',
-        boxShadow: '0 1px 4px rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.04)',
+        boxShadow: '0 2px 12px rgba(0,0,0,0.03)',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'translateY(-5px)'
-        e.currentTarget.style.boxShadow = '0 8px 28px rgba(0,0,0,0.10), 0 20px 48px rgba(0,0,0,0.07)'
-        e.currentTarget.style.border = '1px solid rgba(0,0,0,0.10)'
+        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.06)'
+        e.currentTarget.style.transform = 'translateY(-3px)'
       }}
       onMouseLeave={(e) => {
+        e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.03)'
         e.currentTarget.style.transform = 'translateY(0)'
-        e.currentTarget.style.boxShadow = '0 1px 4px rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.04)'
-        e.currentTarget.style.border = '1px solid rgba(0,0,0,0.07)'
       }}
     >
       {/* ── Imagem ── */}
@@ -157,7 +154,7 @@ export default function ApplicationsSection() {
   return (
     <section
       id="aplicacoes"
-      className="py-16 sm:py-24"
+      className="py-20 sm:py-32"
       style={{ backgroundColor: '#FFFFFF' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -172,13 +169,8 @@ export default function ApplicationsSection() {
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4" style={{ color: '#1A1A1A' }}>
             Aplicações da impressão DTF para{' '}
-            <span style={{
-              background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}>
-              revenda e personalizados
+            <span style={{ color: '#C6A15B' }}>
+              todo tipo de demanda
             </span>
           </h2>
           <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#666666' }}>

@@ -7,7 +7,7 @@ export default function FinalCTASection() {
   return (
     <section
       id="cta-final"
-      className="py-16 sm:py-24 relative overflow-hidden"
+      className="py-24 sm:py-32 relative overflow-hidden"
       style={{ backgroundColor: '#FFFFFF' }}
     >
       {/* Fundo decorativo */}
@@ -26,12 +26,7 @@ export default function FinalCTASection() {
           {/* Título */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight" style={{ color: '#1A1A1A' }}>
             Peça seu orçamento{' '}
-            <span style={{
-              background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}>
+            <span style={{ color: '#C6A15B' }}>
               pelo WhatsApp
             </span>
           </h2>

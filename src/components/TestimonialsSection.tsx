@@ -57,11 +57,10 @@ const ROW_2 = [
 function ReviewCard({ name, text, image }: { name: string; text: string; image: string }) {
   return (
     <div
-      className="flex-shrink-0 flex flex-col w-[320px] sm:w-[360px] p-7 rounded-3xl select-none"
+      className="flex-shrink-0 w-[300px] sm:w-[350px] rounded-2xl p-6 sm:p-7 flex flex-col"
       style={{
         backgroundColor: '#FFFFFF',
-        boxShadow: '0 8px 30px rgba(0,0,0,0.04)',
-        border: '1px solid rgba(0,0,0,0.05)',
+        boxShadow: '0 2px 12px rgba(0,0,0,0.03)',
       }}
     >
       {/* Estrelas + Google */}
@@ -132,29 +131,18 @@ export default function TestimonialsSection() {
   return (
     <section
       id="avaliacoes"
-      className="py-16 sm:py-24 overflow-hidden"
+      className="py-20 sm:py-32 overflow-hidden"
       style={{ backgroundColor: '#F9F8F5' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Cabeçalho */}
         <div className="max-w-3xl mx-auto text-center mb-14">
-          <span
-            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5"
-            style={{
-              background: 'rgba(198,161,91,0.12)',
-              color: '#C6A15B',
-              border: '1px solid rgba(198,161,91,0.25)',
-            }}
-          >
-            Avaliações
-          </span>
-          <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-5"
-            style={{ color: '#1A1A1A' }}
-          >
-            Clientes que confiam na{' '}
-            <span style={{ color: '#C6A15B' }}>Guimarães</span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4" style={{ color: '#1A1A1A' }}>
+            Avaliações de{' '}
+            <span style={{ color: '#C6A15B' }}>
+              clientes
+            </span>
           </h2>
           <p
             className="text-base sm:text-lg leading-relaxed"

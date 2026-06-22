@@ -43,11 +43,10 @@ function FAQItem({ q, a, isOpen, onToggle }: {
 }) {
   return (
     <div
-      className="rounded-2xl overflow-hidden transition-all duration-200"
+      className="overflow-hidden transition-all duration-200"
       style={{
-        background: isOpen ? '#FFFFFF' : '#FDFCF9',
-        border: `1px solid ${isOpen ? 'rgba(198,161,91,0.25)' : 'rgba(0,0,0,0.07)'}`,
-        boxShadow: isOpen ? '0 4px 20px rgba(0,0,0,0.07)' : '0 1px 3px rgba(0,0,0,0.04)',
+        background: isOpen ? '#F9F8F5' : '#FFFFFF',
+        borderBottom: '1px solid rgba(0,0,0,0.05)',
       }}
     >
       <button
@@ -87,7 +86,7 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="py-16 sm:py-24"
+      className="py-20 sm:py-32"
       style={{ backgroundColor: '#FFFFFF' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -101,12 +100,7 @@ export default function FAQSection() {
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight" style={{ color: '#1A1A1A' }}>
               Dúvidas frequentes sobre{' '}
-              <span style={{
-                background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}>
+              <span style={{ color: '#C6A15B' }}>
                 impressão DTF
               </span>
             </h2>

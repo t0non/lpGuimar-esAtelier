@@ -44,7 +44,7 @@ export default function ProcessSection() {
   return (
     <section
       id="como-funciona"
-      className="py-16 sm:py-24"
+      className="py-20 sm:py-32"
       style={{ backgroundColor: '#FFFFFF' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,12 +57,7 @@ export default function ProcessSection() {
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-5" style={{ color: '#1A1A1A' }}>
             Do orçamento à produção,{' '}
-            <span style={{
-              background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}>
+            <span style={{ color: '#C6A15B' }}>
               tudo pelo WhatsApp
             </span>
           </h2>
@@ -84,8 +79,7 @@ export default function ProcessSection() {
               className="relative z-10 flex flex-col items-center text-center p-8 rounded-3xl transition-transform duration-300 hover:-translate-y-2"
               style={{
                 backgroundColor: '#FFFFFF',
-                boxShadow: '0 4px 24px rgba(0,0,0,0.04)',
-                border: '1px solid rgba(0,0,0,0.04)',
+                border: '1px solid rgba(0,0,0,0.08)',
               }}
             >
               {/* Ícone */}
@@ -93,7 +87,6 @@ export default function ProcessSection() {
                 <div 
                   className="w-16 h-16 rounded-2xl flex items-center justify-center relative z-10"
                   style={{
-                    background: bg || 'linear-gradient(135deg, rgba(198,161,91,0.15) 0%, rgba(232,201,122,0.15) 100%)',
                     color: color || '#C6A15B',
                   }}
                 >
