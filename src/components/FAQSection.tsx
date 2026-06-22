@@ -6,39 +6,35 @@ import { ChevronDown } from 'lucide-react'
 const FAQS = [
   {
     q: 'O que é impressão DTF?',
-    a: 'Impressão DTF é uma técnica de estampa em filme transfer usada para personalizar camisetas, uniformes e outras peças têxteis com boa definição e cores vivas.',
-  },
-  {
-    q: 'Como recebo um orçamento de impressão DTF?',
-    a: 'É simples: envie sua arte pelo WhatsApp com as medidas desejadas, quantidade e tipo de peça. A equipe avalia o material e retorna com orientações, prazo e valor antes de qualquer produção.',
-  },
-  {
-    q: 'O valor muda conforme a arte?',
-    a: 'Sim. O orçamento pode variar de acordo com o tamanho da arte, metragem total, quantidade de peças, tipo de aplicação e prazo. Por isso avaliamos cada pedido individualmente.',
-  },
-  {
-    q: 'Posso pedir orçamento para pedidos pequenos?',
-    a: 'Sim. A Guimarães atende tanto pedidos avulsos quanto recorrentes. Independentemente do volume, envie sua arte para receber uma orientação personalizada.',
-  },
-  {
-    q: 'Vocês atendem revendedores e estamparias?',
-    a: 'Sim. Atendemos empresas, marcas, estamparias e revendedores com pedidos recorrentes ou sob demanda. Entre em contato pelo WhatsApp para falar sobre seu volume e necessidades.',
-  },
-  {
-    q: 'Posso enviar várias artes no mesmo pedido?',
-    a: 'Sim. Envie as artes pelo WhatsApp e informe tamanhos, quantidade ou metragem aproximada. A equipe avalia e orienta sobre a melhor forma de organizar a produção.',
-  },
-  {
-    q: 'Vocês ajudam a conferir se a arte está boa para impressão?',
-    a: 'A equipe pode avaliar o material enviado e orientar caso seja necessário ajustar formato, tamanho ou qualidade da arte para garantir um resultado de qualidade na impressão.',
-  },
-  {
-    q: 'Qual o prazo de produção?',
-    a: 'O prazo pode variar conforme volume e agenda de produção. A equipe informa o prazo no momento do orçamento pelo WhatsApp.',
+    a: 'Impressão DTF é uma técnica de personalização em que a arte é impressa em um filme especial e depois transferida para a peça. É muito usada em camisetas, uniformes, brindes, marcas de roupa e personalizados.',
   },
   {
     q: 'A Guimarães faz impressão DTF em Belo Horizonte?',
-    a: 'Sim. A Guimarães atende demandas de impressão DTF em Belo Horizonte e região. Estamos localizados na Galeria Ouvidor — R. São Paulo, Loja 50A, 1º andar, Centro, BH. Consulte retirada, entrega ou envio pelo WhatsApp.',
+    a: 'Sim. A Guimarães Bordados & Estampas atende em Belo Horizonte e recebe pedidos pelo WhatsApp para impressão DTF, DTF UV, bordados, estampas e personalizados.',
+  },
+  {
+    q: 'Como recebo um orçamento de impressão DTF?',
+    a: 'Você envia sua arte pelo WhatsApp com medida, quantidade e tipo de aplicação. A equipe avalia o material e retorna com orientação, prazo e orçamento sob medida.',
+  },
+  {
+    q: 'O valor muda conforme a arte?',
+    a: 'Sim. O orçamento pode variar conforme tamanho da arte, metragem, quantidade, tipo de peça, acabamento e demanda. Por isso, a avaliação é feita antes da produção.',
+  },
+  {
+    q: 'Vocês atendem revendedores e estamparias?',
+    a: 'Sim. A Guimarães atende revendedores, estamparias, marcas de roupa e empresas que precisam de produção avulsa ou recorrente.',
+  },
+  {
+    q: 'Posso fazer pedido pequeno?',
+    a: 'Sim. A empresa atende pedidos avulsos, personalizados e demandas recorrentes. O ideal é enviar a arte pelo WhatsApp para confirmar a melhor forma de produzir.',
+  },
+  {
+    q: 'Qual a diferença entre DTF e DTF UV?',
+    a: 'DTF é muito usado para tecidos, como camisetas e uniformes. DTF UV é indicado para personalização de superfícies rígidas e brindes, dependendo do tipo de material e aplicação.',
+  },
+  {
+    q: 'Preciso enviar a arte pronta?',
+    a: 'Se você já tiver a arte, envie pelo WhatsApp para avaliação. Caso precise de orientação sobre formato, tamanho ou aplicação, a equipe pode ajudar antes da produção.',
   },
 ]
 
@@ -104,7 +100,7 @@ export default function FAQSection() {
               Dúvidas frequentes
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight" style={{ color: '#1A1A1A' }}>
-              Dúvidas sobre{' '}
+              Dúvidas frequentes sobre{' '}
               <span style={{
                 background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 100%)',
                 WebkitBackgroundClip: 'text',

@@ -25,14 +25,14 @@ export default function FinalCTASection() {
 
           {/* Título */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight" style={{ color: '#1A1A1A' }}>
-            Pronto para produzir suas{' '}
+            Peça seu orçamento{' '}
             <span style={{
               background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
             }}>
-              estampas em DTF?
+              pelo WhatsApp
             </span>
           </h2>
 

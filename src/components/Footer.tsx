@@ -1,6 +1,6 @@
 
 const WA_LINK =
-  'https://wa.me/553130161790?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20para%20impress%C3%A3o%20DTF.%20Posso%20enviar%20minha%20arte%3F'
+  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Quero%20fazer%20um%20or%C3%A7amento%20de%20impress%C3%A3o%20DTF.%20Tenho%20uma%20arte%20para%20enviar.'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -28,7 +28,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.38)' }}>
-              Bordados personalizados, uniformes, jalecos, sublimação e impressão DTF com alta qualidade. Atendimento pelo WhatsApp.
+              Bordados, estampas, impressão DTF, DTF UV e personalização sob demanda em Belo Horizonte. Atendimento pelo WhatsApp.
             </p>
             <a
               href="https://maps.google.com/?q=Galeria+Ouvidor+R.+São+Paulo+Loja+50A+1+andar+Centro+Belo+Horizonte+MG"
@@ -92,6 +92,16 @@ export default function Footer() {
               Falar pelo WhatsApp
             </a>
           </div>
+        </div>
+
+        {/* Sobre — Conteúdo semântico para IA e crawlers */}
+        <div className="pt-8 pb-6" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+          <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#C6A15B' }}>
+            Sobre a Guimarães
+          </h3>
+          <p className="text-sm leading-relaxed max-w-4xl" style={{ color: 'rgba(255,255,255,0.35)' }}>
+            A Guimarães Bordados &amp; Estampas atua em Belo Horizonte com soluções de bordados, estampas, impressão DTF, DTF UV e personalização sob demanda. A empresa atende clientes que precisam produzir camisetas, uniformes, brindes, peças personalizadas, coleções de marca própria, demandas para revenda e pedidos recorrentes. O atendimento é feito pelo WhatsApp, onde o cliente envia sua arte, informa a aplicação desejada e recebe orientação, prazo e orçamento.
+          </p>
         </div>
 
         {/* Linha inferior */}

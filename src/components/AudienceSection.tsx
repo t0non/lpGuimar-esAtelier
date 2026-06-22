@@ -5,33 +5,33 @@ import { Shirt, Layers, Building2, Store, Gift, Star } from 'lucide-react'
 const AUDIENCE_CARDS = [
   {
     icon: Shirt,
-    title: 'Marcas de roupa',
-    text: 'Teste coleções, produza reposições e venda peças personalizadas sem depender de máquina própria.',
+    title: 'Produza coleções sem estoque parado',
+    text: 'Teste estampas, faça reposições e venda peças personalizadas sem depender de máquina própria.',
   },
   {
     icon: Layers,
-    title: 'Estamparias',
-    text: 'Terceirize a impressão DTF e mantenha o foco na venda, aplicação e entrega ao cliente.',
+    title: 'Terceirize a impressão DTF',
+    text: 'Você vende, aplica e entrega. A Guimarães cuida da produção com orientação e atendimento direto.',
   },
   {
     icon: Building2,
-    title: 'Empresas e uniformes',
-    text: 'Produza logos, nomes, equipes, brindes corporativos e peças para ações promocionais.',
+    title: 'Uniformes personalizados',
+    text: 'Produza camisetas, polos, logos, nomes e peças corporativas sob demanda em Belo Horizonte.',
   },
   {
     icon: Store,
-    title: 'Lojas e revendedores',
-    text: 'Tenha um fornecedor de DTF para pedidos avulsos, recorrentes e demandas de revenda.',
+    title: 'Fornecedor para pedidos recorrentes',
+    text: 'Tenha apoio para demandas avulsas, reposições e produções contínuas de DTF.',
   },
   {
     icon: Gift,
-    title: 'Personalizados',
-    text: 'Produza camisetas, ecobags, moletons, brindes e peças criativas sob demanda.',
+    title: 'Peças criativas sob demanda',
+    text: 'Personalize camisetas, ecobags, bonés, brindes e materiais promocionais com DTF e DTF UV.',
   },
   {
     icon: Star,
-    title: 'Eventos e brindes',
-    text: 'Uma solução prática para pequenas e médias produções personalizadas com agilidade.',
+    title: 'Produção para ações e eventos',
+    text: 'Soluções personalizadas para campanhas, equipes, eventos e pequenas produções.',
   },
 ]
 
@@ -52,14 +52,14 @@ export default function AudienceSection() {
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4"
             style={{ color: '#1A1A1A' }}>
-            DTF Para Quem Vende Personalizados,{' '}
+            DTF para quem vende, personaliza{' '}
             <span style={{
               background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
             }}>
-              Camisetas e Uniformes
+              ou revende
             </span>
           </h2>
           <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#666666' }}>

@@ -4,8 +4,6 @@ import AudienceSection from '@/components/AudienceSection'
 import BenefitsSection from '@/components/BenefitsSection'
 import ProcessSection from '@/components/ProcessSection'
 import ApplicationsSection from '@/components/ApplicationsSection'
-import PricingCTASection from '@/components/PricingCTASection'
-import GallerySection from '@/components/GallerySection'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import FAQSection from '@/components/FAQSection'
 import FinalCTASection from '@/components/FinalCTASection'
@@ -21,8 +19,6 @@ export default function Home() {
       <BenefitsSection />
       <ProcessSection />
       <ApplicationsSection />
-      <PricingCTASection />
-      <GallerySection />
       <TestimonialsSection />
       <FAQSection />
       <FinalCTASection />

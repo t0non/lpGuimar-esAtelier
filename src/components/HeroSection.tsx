@@ -77,9 +77,9 @@ export default function HeroSection() {
               className="text-4xl sm:text-5xl lg:text-[50px] font-extrabold tracking-tight"
               style={{ color: '#1A1A1A', lineHeight: '1.10' }}
             >
-              DTF e DTF UV Sob Demanda
+              Impressão DTF e DTF UV Sob Demanda{' '}
               <span className="block mt-1">
-                Para{' '}
+                em{' '}
                 <span
                   style={{
                     background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 50%, #B8903F 100%)',
@@ -88,7 +88,7 @@ export default function HeroSection() {
                     backgroundClip: 'text',
                   }}
                 >
-                  Camisetas, Brindes e Revenda
+                  Belo Horizonte
                 </span>
               </span>
             </h1>
@@ -98,8 +98,8 @@ export default function HeroSection() {
               className="text-base sm:text-lg leading-relaxed max-w-xl"
               style={{ color: '#555555' }}
             >
-              Envie sua arte pelo WhatsApp e receba valores, prazo e orientação para produzir
-              camisetas, uniformes, brindes e personalizados com a Guimarães Bordados &amp; Estampas.
+              Envie sua arte pelo WhatsApp e receba orientação, prazo e orçamento para camisetas,
+              uniformes, brindes, personalizados e revenda com a Guimarães Bordados &amp; Estampas.
             </p>
 
             {/* CTAs — visíveis acima da dobra */}
@@ -160,7 +160,7 @@ export default function HeroSection() {
 
             {/* Microcopy */}
             <p className="text-sm -mt-1" style={{ color: '#888888' }}>
-              Orçamento pelo WhatsApp&nbsp;•&nbsp;Pedidos avulsos e recorrentes&nbsp;•&nbsp;Atendimento para revenda
+              Orçamento pelo WhatsApp&nbsp;•&nbsp;Pedidos avulsos e recorrentes&nbsp;•&nbsp;Atendimento para empresas e revendedores
             </p>
 
             {/* Selos comerciais */}
@@ -218,7 +218,7 @@ function HeroVisual() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/images/Imagem_sessao1.png"
-        alt="DTF e DTF UV sob demanda — camisetas, brindes e personalizados — Guimarães Bordados e Estampas"
+        alt="Impressão DTF e DTF UV sob demanda para camisetas, uniformes e brindes personalizados — Guimarães Bordados e Estampas em Belo Horizonte"
         className="w-full h-auto"
         style={{
           display: 'block',

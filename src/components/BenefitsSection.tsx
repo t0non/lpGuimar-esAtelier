@@ -3,7 +3,7 @@
 import { Palette, PackageCheck, Repeat2, MessageCircle, Cpu, Calculator } from 'lucide-react'
 
 const WA_LINK =
-  'https://wa.me/553130161790?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20para%20impress%C3%A3o%20DTF.%20Posso%20enviar%20minha%20arte%3F'
+  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Quero%20fazer%20um%20or%C3%A7amento%20de%20impress%C3%A3o%20DTF.%20Tenho%20uma%20arte%20para%20enviar.'
 
 const BENEFITS = [
   {
@@ -58,7 +58,7 @@ export default function BenefitsSection() {
             Por que escolher
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4 text-white">
-            Por que produzir DTF com a{' '}
+            Por que produzir com a{' '}
             <span className="inline-flex items-center gap-0.5" style={{ verticalAlign: 'middle' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

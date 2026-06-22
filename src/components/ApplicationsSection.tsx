@@ -7,15 +7,15 @@ const APPLICATIONS = [
     img: '/images/app_camisetas.png',
     tag: 'Camisetas',
     tagAccent: '#C6A15B',
-    title: 'DTF para camisetas',
-    text: 'Estampas sob demanda para coleções, eventos e personalizados.',
+    title: 'DTF para camisetas personalizadas',
+    text: 'Estampas sob demanda para coleções, eventos e personalizados em Belo Horizonte.',
   },
   {
     img: '/images/app_uniformes.png',
     tag: 'Uniformes',
     tagAccent: '#3B82F6',
-    title: 'DTF para uniformes',
-    text: 'Logos, nomes e equipes em uniformes corporativos e promocionais.',
+    title: 'DTF para uniformes corporativos',
+    text: 'Logos, nomes e equipes em uniformes personalizados sob demanda.',
   },
   {
     img: '/images/app_marcas.png',
@@ -171,7 +171,7 @@ export default function ApplicationsSection() {
             Aplicações
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4" style={{ color: '#1A1A1A' }}>
-            Impressão DTF para camisetas, uniformes,{' '}
+            Aplicações da impressão DTF para{' '}
             <span style={{
               background: 'linear-gradient(135deg, #C6A15B 0%, #E8C97A 100%)',
               WebkitBackgroundClip: 'text',
