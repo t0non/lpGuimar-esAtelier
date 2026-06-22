@@ -7,7 +7,7 @@ const WA_LINK =
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="relative bg-white pt-[80px] lg:pt-[80px] pb-8 overflow-hidden">
+    <section id="inicio" className="relative bg-white pt-[64px] lg:pt-[72px] pb-8 overflow-hidden">
       
       {/* Background Decorativo Suave */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
@@ -22,15 +22,15 @@ export default function HeroSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start pt-4 lg:pt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start pt-2 lg:pt-4">
 
           {/* ══════════════════════════════════════
               COLUNA ESQUERDA — COPY & CTAs
           ══════════════════════════════════════ */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-3 lg:pr-8">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-2 lg:pr-8">
             
             {/* Badge */}
-            <div>
+            <div className="mb-1">
               <span
                 className="inline-flex w-full sm:w-auto items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full"
                 style={{
@@ -49,11 +49,11 @@ export default function HeroSection() {
 
             {/* H1 */}
             <h1
-              className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight"
-              style={{ color: '#111827', lineHeight: '1.10' }}
+              className="text-3xl sm:text-4xl lg:text-[40px] font-extrabold tracking-tight"
+              style={{ color: '#111827', lineHeight: '1.05' }}
             >
               Impressão DTF e DTF UV{' '}
-              <span className="block mt-1">
+              <span className="block mt-0.5">
                 Sob Demanda em{' '}
                 <span style={{ color: '#C6A15B' }}>
                   BH
@@ -62,7 +62,7 @@ export default function HeroSection() {
             </h1>
 
             {/* Subheadline & Apoio */}
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 mt-1">
               <p
                 className="text-base sm:text-lg leading-relaxed max-w-xl"
                 style={{ color: '#4B5563' }}
