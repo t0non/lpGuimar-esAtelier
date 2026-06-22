@@ -1,3 +1,4 @@
+import { MapPin, Phone, MessageCircle } from 'lucide-react'
 
 const WA_LINK =
   'https://wa.me/553130161790?text=Ol%C3%A1%21%20Quero%20fazer%20um%20or%C3%A7amento%20de%20impress%C3%A3o%20DTF.%20Tenho%20uma%20arte%20para%20enviar.'
@@ -7,110 +8,108 @@ export default function Footer() {
 
   return (
     <footer
-      className="pb-28 md:pb-0"
-      style={{ backgroundColor: '#111111', color: 'rgba(255,255,255,0.50)' }}
+      className="pb-28 md:pb-0 relative"
+      style={{ backgroundColor: '#000000', color: 'rgba(255,255,255,0.50)' }}
     >
-      {/* Linha superior dourada */}
-      <div className="w-full h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(198,161,91,0.35), transparent)' }} />
+      {/* Linha superior dourada fina */}
+      <div className="w-full h-px opacity-30" style={{ background: 'linear-gradient(90deg, transparent, #C6A15B, transparent)' }} />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-12 text-center md:text-left">
-
-          {/* Coluna 1 — Marca */}
-          <div className="flex flex-col gap-4">
-            <div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16 text-center sm:text-left">
+          
+          {/* Coluna 1 & 2 — Marca e Descrição (Ocupa 2 colunas no Desktop) */}
+          <div className="lg:col-span-2 flex flex-col gap-5 items-center sm:items-start">
+            <a href="#inicio" className="block mb-2" aria-label="Voltar ao topo">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Logo_Atelier.png"
                 alt="Guimarães Atelier — Impressão DTF"
-                className="h-14 w-auto object-contain"
+                className="h-12 w-auto object-contain transition-opacity hover:opacity-80"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
-            </div>
-            <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.38)' }}>
-              Bordados, estampas, impressão DTF, DTF UV e personalização sob demanda em Belo Horizonte. Atendimento pelo WhatsApp.
+            </a>
+            <p className="text-sm leading-relaxed max-w-sm" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              Especialistas em bordados, estampas, impressão DTF e DTF UV sob demanda em Belo Horizonte. Transformando ideias em peças reais com qualidade premium.
             </p>
-            <address className="not-italic text-sm leading-relaxed mx-auto md:mx-0 w-fit" style={{ color: 'rgba(255,255,255,0.40)' }}>
-              <a
-                href="https://maps.google.com/?q=Galeria+Ouvidor+R.+São+Paulo+Loja+50A+1+andar+Centro+Belo+Horizonte+MG"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors block w-fit"
-              >
-                📍 Galeria Ouvidor — R. São Paulo, Loja 50A,<br />
+            <div className="flex items-start gap-3 mt-2 justify-center sm:justify-start text-sm w-fit" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              <MapPin size={18} className="mt-0.5 flex-shrink-0" style={{ color: '#C6A15B' }} />
+              <address className="not-italic leading-relaxed text-left">
+                Galeria Ouvidor — R. São Paulo, Loja 50A<br />
                 1º andar — Centro, Belo Horizonte — MG<br />
                 CEP: 30170-130
-              </a>
-            </address>
+              </address>
+            </div>
           </div>
 
-          {/* Coluna 2 — Links */}
-          <div className="flex flex-col gap-3">
-            <span className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: '#C6A15B' }}>
+          {/* Coluna 3 — Navegação Rápida */}
+          <div className="flex flex-col gap-4 items-center sm:items-start">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-2">
               Navegação
-            </span>
-            {[
-              { label: 'Início', href: '#inicio' },
-              { label: 'Como funciona', href: '#como-funciona' },
-              { label: 'Aplicações', href: '#aplicacoes' },
-              { label: 'Dúvidas frequentes', href: '#faq' },
-            ].map(({ label, href }) => (
-              <a key={href} href={href}
-                className="text-sm transition-colors duration-150 hover:text-white w-fit"
-                style={{ color: 'rgba(255,255,255,0.45)' }}>
-                {label}
-              </a>
-            ))}
+            </h3>
+            <ul className="flex flex-col gap-3">
+              {[
+                { label: 'Início', href: '#inicio' },
+                { label: 'Como funciona', href: '#como-funciona' },
+                { label: 'Aplicações', href: '#aplicacoes' },
+                { label: 'Dúvidas frequentes', href: '#faq' },
+              ].map(({ label, href }) => (
+                <li key={href}>
+                  <a href={href} className="text-sm hover:text-white transition-colors duration-200" style={{ color: 'rgba(255,255,255,0.45)' }}>
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Coluna 3 — Contato */}
-          <div className="flex flex-col gap-4">
-            <span className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: '#C6A15B' }}>
+          {/* Coluna 4 — Contato */}
+          <div className="flex flex-col gap-4 items-center sm:items-start">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-2">
               Contato
-            </span>
-            <p className="text-sm" style={{ color: 'rgba(255,255,255,0.40)' }}>
-              Telefone:{' '}
-              <a href="tel:+553130161790" className="font-semibold text-white hover:underline">
+            </h3>
+            <div className="flex items-center gap-3" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              <Phone size={16} className="flex-shrink-0" style={{ color: '#C6A15B' }} />
+              <a href="tel:+553130161790" className="text-sm hover:text-white transition-colors">
                 (31) 3016-1790
               </a>
-            </p>
-            <p className="text-sm" style={{ color: 'rgba(255,255,255,0.40)' }}>
-              WhatsApp:{' '}
-              <a href={WA_LINK} target="_blank" rel="noopener noreferrer"
-                className="font-semibold text-white hover:underline">
-                (31) 3016-1790
+            </div>
+            <div className="flex items-center gap-3 mb-2" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              <MessageCircle size={16} className="flex-shrink-0" style={{ color: '#C6A15B' }} />
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors">
+                WhatsApp Direct
               </a>
-            </p>
+            </div>
+            
             <a
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 w-fit"
-              style={{ backgroundColor: '#25D366', boxShadow: '0 4px 12px rgba(37,211,102,0.25)' }}
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold text-[#000000] w-full sm:w-fit transition-transform hover:-translate-y-0.5"
+              style={{ backgroundColor: '#C6A15B' }}
             >
-              <WhatsAppIcon size={16} />
-              Falar pelo WhatsApp
+              Pedir Orçamento
             </a>
           </div>
+
         </div>
 
-        {/* Sobre — Conteúdo semântico para IA e crawlers */}
-        <div className="pt-8 pb-6" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-          <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#C6A15B' }}>
-            Sobre a Guimarães
-          </h3>
-          <p className="text-sm leading-relaxed max-w-4xl mx-auto md:mx-0" style={{ color: 'rgba(255,255,255,0.35)' }}>
-            A Guimarães Bordados &amp; Estampas atua em Belo Horizonte com soluções de bordados, estampas, impressão DTF, DTF UV e personalização sob demanda. A empresa atende clientes que precisam produzir camisetas, uniformes, brindes, peças personalizadas, coleções de marca própria, demandas para revenda e pedidos recorrentes. O atendimento é feito pelo WhatsApp, onde o cliente envia sua arte, informa a aplicação desejada e recebe orientação, prazo e orçamento.
+        {/* Sobre — Conteúdo Semântico para IA e Crawlers (Discreto) */}
+        <div className="pt-8 pb-6 text-center sm:text-left" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+          <span className="text-xs font-bold uppercase tracking-widest mb-3 block" style={{ color: '#C6A15B' }}>
+            Guimarães Bordados & Estampas
+          </span>
+          <p className="text-[13px] leading-relaxed max-w-4xl mx-auto sm:mx-0" style={{ color: 'rgba(255,255,255,0.25)' }}>
+            Empresa especializada em Belo Horizonte atendendo marcas, estamparias e clientes finais com bordados personalizados, impressão DTF e DTF UV. Serviço focado em qualidade sem pedido mínimo, recebendo solicitações e artes diretamente via WhatsApp para agilidade e orçamento transparente.
           </p>
         </div>
 
-        {/* Linha inferior */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs"
-          style={{ borderTop: '1px solid rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.28)' }}>
-          <span>© {year} Guimarães Atelier. Todos os direitos reservados.</span>
-          <div className="flex items-center gap-4">
-            <a href="/politica-de-privacidade" className="hover:text-white transition-colors">Política de Privacidade</a>
-            <a href="/termos-de-uso" className="hover:text-white transition-colors">Termos de Uso</a>
+        {/* Linha inferior de Copyright */}
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px]"
+          style={{ borderTop: '1px solid rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.25)' }}>
+          <p>© {year} Guimarães Bordados & Estampas. Todos os direitos reservados.</p>
+          <div className="flex items-center gap-5">
+            <a href="/politica-de-privacidade" className="hover:text-white transition-colors">Privacidade</a>
+            <a href="/termos-de-uso" className="hover:text-white transition-colors">Termos</a>
           </div>
         </div>
       </div>
