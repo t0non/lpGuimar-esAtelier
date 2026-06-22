@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const WA_LINK =
-  'https://wa.me/553130161790?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20para%20impress%C3%A3o%20DTF.%20Posso%20enviar%20minha%20arte%3F'
+  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Quero%20fazer%20um%20or%C3%A7amento%20de%20impress%C3%A3o%20DTF.%20Tenho%20uma%20arte%20para%20enviar.'
 
 const NAV_LINKS = [
   { label: 'Início', href: '#inicio' },
@@ -76,21 +76,8 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* ── ÁREA DIREITA (Badge + CTA + Burger) ── */}
+            {/* ── ÁREA DIREITA (CTA + Burger) ── */}
             <div className="flex-shrink-0 flex items-center gap-3 lg:gap-4">
-              
-              {/* Badge Preço (Apenas Desktop) */}
-              <div
-                className="hidden lg:flex items-center px-4 py-1.5 rounded-full"
-                style={{
-                  backgroundColor: '#F2EDE3',
-                  border: '1px solid rgba(198,161,91,0.3)',
-                }}
-              >
-                <span className="text-xs font-bold tracking-wide" style={{ color: '#C6A15B' }}>
-                  DTF R$75/m
-                </span>
-              </div>
 
               {/* Botão WhatsApp */}
               <a

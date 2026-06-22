@@ -9,36 +9,32 @@ const FAQS = [
     a: 'Impressão DTF é uma técnica de estampa em filme transfer usada para personalizar camisetas, uniformes e outras peças têxteis com boa definição e cores vivas.',
   },
   {
-    q: 'Vocês imprimem DTF por metro?',
-    a: 'A disponibilidade de impressão DTF por metro pode variar conforme a demanda. Envie sua arte pelo WhatsApp para receber orientação sobre metragem, valores e prazo.',
+    q: 'Como recebo um orçamento de impressão DTF?',
+    a: 'É simples: envie sua arte pelo WhatsApp com as medidas desejadas, quantidade e tipo de peça. A equipe avalia o material e retorna com orientações, prazo e valor antes de qualquer produção.',
   },
   {
-    q: 'Atendem revendedores e estamparias?',
-    a: 'Sim. A Guimarães atende pedidos avulsos, recorrentes, empresas, marcas, estamparias e revendedores.',
+    q: 'O valor muda conforme a arte?',
+    a: 'Sim. O orçamento pode variar de acordo com o tamanho da arte, metragem total, quantidade de peças, tipo de aplicação e prazo. Por isso avaliamos cada pedido individualmente.',
   },
   {
-    q: 'Consigo pedir orçamento antes de fechar?',
-    a: 'Sim. Você pode enviar sua arte pelo WhatsApp para receber uma orientação sobre valores, prazo e melhor forma de produzir.',
+    q: 'Posso pedir orçamento para pedidos pequenos?',
+    a: 'Sim. A Guimarães atende tanto pedidos avulsos quanto recorrentes. Independentemente do volume, envie sua arte para receber uma orientação personalizada.',
+  },
+  {
+    q: 'Vocês atendem revendedores e estamparias?',
+    a: 'Sim. Atendemos empresas, marcas, estamparias e revendedores com pedidos recorrentes ou sob demanda. Entre em contato pelo WhatsApp para falar sobre seu volume e necessidades.',
   },
   {
     q: 'Posso enviar várias artes no mesmo pedido?',
-    a: 'Sim. Envie as artes pelo WhatsApp e informe tamanhos, quantidade ou metragem aproximada para avaliação.',
+    a: 'Sim. Envie as artes pelo WhatsApp e informe tamanhos, quantidade ou metragem aproximada. A equipe avalia e orienta sobre a melhor forma de organizar a produção.',
   },
   {
     q: 'Vocês ajudam a conferir se a arte está boa para impressão?',
-    a: 'A equipe pode avaliar o material enviado e orientar caso seja necessário ajustar formato, tamanho ou qualidade da arte.',
-  },
-  {
-    q: 'Quanto custa impressão DTF?',
-    a: 'O valor depende da metragem, tamanho da arte, quantidade e tipo de pedido. Envie sua arte para receber um orçamento personalizado.',
+    a: 'A equipe pode avaliar o material enviado e orientar caso seja necessário ajustar formato, tamanho ou qualidade da arte para garantir um resultado de qualidade na impressão.',
   },
   {
     q: 'Qual o prazo de produção?',
-    a: 'O prazo pode variar conforme volume e agenda de produção. A equipe informa o prazo no momento do orçamento.',
-  },
-  {
-    q: 'Quais informações preciso mandar para orçamento?',
-    a: 'Para solicitar orçamento, envie sua arte, tamanho desejado, quantidade ou metragem aproximada e informe se é pedido avulso ou recorrente.',
+    a: 'O prazo pode variar conforme volume e agenda de produção. A equipe informa o prazo no momento do orçamento pelo WhatsApp.',
   },
   {
     q: 'A Guimarães faz impressão DTF em Belo Horizonte?',
