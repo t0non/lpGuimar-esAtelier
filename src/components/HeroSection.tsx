@@ -141,7 +141,7 @@ export default function HeroSection() {
             {/* Foto principal (Mockup ou Ambiente de trabalho) livre de container */}
             <div className="relative w-full max-w-[500px] z-10 animate-fade-in-up">
               <img
-                src="/images/imagem_sessao1.png"
+                src="/images/Imagem_sessao1.png"
                 alt="Impressão DTF rolo em Belo Horizonte"
                 className="w-full h-auto object-contain drop-shadow-2xl"
               />
