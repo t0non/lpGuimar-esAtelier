@@ -34,17 +34,17 @@ const REVIEWS = [
   {
     name: 'Doug Teixeira',
     text: 'Atendimento fantástico e preço justo pela qualidade do serviço.',
-    image: null
+    image: '/images/Doug Texeira.png'
   },
   {
     name: 'Lays Lorena',
     text: 'Bordado de Excelência, atendimento excepcional fora a qualidade de serviço. Recomendo muito!!',
-    image: null
+    image: '/images/Lays Lorena.png'
   },
   {
     name: 'Renato Santana',
     text: 'Meu uniforme ficou ótimo, já faço o bordado com eles há 6 anos. Muito eficiente!!!',
-    image: null
+    image: '/images/Renato Santana.png'
   },
 ]
 
