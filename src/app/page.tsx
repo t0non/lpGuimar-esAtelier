@@ -1,6 +1,5 @@
 import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
-import BenefitsSection from '@/components/BenefitsSection'
 import ProcessSection from '@/components/ProcessSection'
 import AudienceSection from '@/components/AudienceSection'
 import ApplicationsSection from '@/components/ApplicationsSection'
@@ -15,7 +14,6 @@ export default function Home() {
     <main className="has-sticky-btn">
       <Header />
       <HeroSection />
-      <BenefitsSection />
       <ProcessSection />
       <ApplicationsSection />
       <AudienceSection />
