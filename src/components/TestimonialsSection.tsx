@@ -30,7 +30,22 @@ const REVIEWS = [
     name: 'Maison Dgri',
     text: 'Foi uma excelente experiência. Recomendo pelo atendimento e qualidade do serviço executado.',
     image: '/images/Maison.png'
-  }
+  },
+  {
+    name: 'Doug Teixeira',
+    text: 'Atendimento fantástico e preço justo pela qualidade do serviço.',
+    image: null
+  },
+  {
+    name: 'Lays Lorena',
+    text: 'Bordado de Excelência, atendimento excepcional fora a qualidade de serviço. Recomendo muito!!',
+    image: null
+  },
+  {
+    name: 'Renato Santana',
+    text: 'Meu uniforme ficou ótimo, já faço o bordado com eles há 6 anos. Muito eficiente!!!',
+    image: null
+  },
 ]
 
 export default function TestimonialsSection() {
@@ -80,12 +95,25 @@ export default function TestimonialsSection() {
 
               {/* Cliente */}
               <div className="flex items-center gap-4 mb-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img 
-                  src={review.image} 
-                  alt={review.name} 
-                  className="w-12 h-12 rounded-full object-cover shadow-sm border border-black/5"
-                />
+                {review.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={review.image}
+                    alt={review.name}
+                    className="w-12 h-12 rounded-full object-cover shadow-sm border border-black/5 flex-shrink-0"
+                  />
+                ) : (
+                  <div
+                    className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-base"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(198,161,91,0.20) 0%, rgba(232,201,122,0.15) 100%)',
+                      color: '#C6A15B',
+                      border: '1px solid rgba(198,161,91,0.25)',
+                    }}
+                  >
+                    {review.name.split(' ').slice(0, 2).map(n => n[0]).join('').toUpperCase()}
+                  </div>
+                )}
                 <h3 className="font-bold text-[17px] leading-tight" style={{ color: '#1A1A1A' }}>
                   {review.name}
                 </h3>
