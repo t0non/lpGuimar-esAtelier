@@ -25,15 +25,15 @@ export default function FinalCTASection() {
 
           {/* Título */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight" style={{ color: '#1A1A1A' }}>
-            Peça seu orçamento{' '}
+            Não perca tempo e dinheiro com estrutura própria.{' '}
             <span style={{ color: '#C6A15B' }}>
-              pelo WhatsApp
+              Produza sob demanda!
             </span>
           </h2>
 
           {/* Texto */}
           <p className="text-base sm:text-lg leading-relaxed max-w-lg" style={{ color: '#666666' }}>
-            Envie sua arte ou explique sua demanda pelo WhatsApp. A Guimarães te orienta sobre formatos, valores e prazo de produção.
+            Envie sua arte e receba orientação, prazo e orçamento para camisetas, uniformes, brindes e personalizados com a Guimarães.
           </p>
 
           {/* CTA */}
@@ -58,12 +58,12 @@ export default function FinalCTASection() {
             }}
           >
             <WhatsAppIcon size={22} />
-            Pedir Orçamento no WhatsApp
+            Enviar Arte e Consultar Valores
           </a>
 
           {/* Microcopy */}
           <p className="text-sm" style={{ color: '#999999' }}>
-            Resposta rápida · Atendimento direto · Sem compromisso
+            Resposta rápida • Atendimento direto • Orçamento sem compromisso
           </p>
         </div>
       </div>
