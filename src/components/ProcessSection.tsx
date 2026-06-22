@@ -71,7 +71,7 @@ export default function ProcessSection() {
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-px -translate-y-1/2 z-0"
             style={{ background: 'linear-gradient(90deg, transparent 5%, rgba(198,161,91,0.2) 15%, rgba(198,161,91,0.2) 85%, transparent 95%)' }} />
 
-          {STEPS.map(({ number, title, text, icon, color, bg }, idx) => (
+          {STEPS.map(({ number, title, text, icon, color }: any, idx: number) => (
             <div 
               key={number} 
               className="relative z-10 flex flex-col items-center text-center p-8 rounded-3xl transition-transform duration-300 hover:-translate-y-2"
