@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Briefcase, Building2, Store, Users, Calendar, Palette } from 'lucide-react'
 
