@@ -7,7 +7,7 @@ const WA_LINK =
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="relative bg-white pt-16 lg:pt-20 pb-12 lg:pb-20 overflow-hidden">
+    <section id="inicio" className="relative bg-white pt-[90px] lg:pt-[100px] pb-12 overflow-hidden">
       
       {/* Background Decorativo Suave */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
@@ -27,7 +27,7 @@ export default function HeroSection() {
           {/* ══════════════════════════════════════
               COLUNA ESQUERDA — COPY & CTAs
           ══════════════════════════════════════ */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 lg:pr-8">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4 lg:pr-8">
             
             {/* Badge */}
             <div>
@@ -49,7 +49,7 @@ export default function HeroSection() {
 
             {/* H1 */}
             <h1
-              className="text-3xl sm:text-4xl lg:text-[50px] font-extrabold tracking-tight"
+              className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight"
               style={{ color: '#111827', lineHeight: '1.10' }}
             >
               Impressão DTF e DTF UV{' '}
@@ -62,7 +62,7 @@ export default function HeroSection() {
             </h1>
 
             {/* Subheadline & Apoio */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               <p
                 className="text-base sm:text-lg leading-relaxed max-w-xl"
                 style={{ color: '#4B5563' }}
@@ -78,7 +78,7 @@ export default function HeroSection() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-4 mt-2">
+            <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-3 mt-1">
               <a
                 href={WA_LINK}
                 target="_blank"
@@ -126,7 +126,7 @@ export default function HeroSection() {
             </div>
 
             {/* Linha de Confiança */}
-            <div className="flex flex-col gap-3 mt-4 w-full">
+            <div className="flex flex-col gap-2 mt-2 w-full">
               <p className="text-sm" style={{ color: '#888888' }}>
                 Orçamento pelo WhatsApp&nbsp;•&nbsp;Atendimento em Belo Horizonte&nbsp;•&nbsp;Pedidos avulsos e recorrentes&nbsp;•&nbsp;Ideal para revenda
               </p>
@@ -136,7 +136,7 @@ export default function HeroSection() {
           {/* ══════════════════════════════════════
               COLUNA DIREITA — CARDS / IMAGEM
           ══════════════════════════════════════ */}
-          <div className="relative w-full h-full min-h-[400px] lg:min-h-[500px] flex items-center justify-center">
+          <div className="relative w-full h-full flex items-center justify-center">
             
             {/* Foto principal (Mockup ou Ambiente de trabalho) livre de container */}
             <div className="relative w-full max-w-[500px] z-10 animate-fade-in-up">
