@@ -5,20 +5,12 @@ import { ChevronDown } from 'lucide-react'
 
 const FAQS = [
   {
-    q: 'O que é impressão DTF?',
-    a: 'Impressão DTF é uma técnica de personalização em que a arte é impressa em um filme especial e depois transferida para a peça. É muito usada em camisetas, uniformes, brindes, marcas de roupa e personalizados.',
+    q: 'Como faço um orçamento de impressão DTF?',
+    a: 'Envie sua arte pelo WhatsApp com medida, quantidade e tipo de aplicação. A equipe avalia o material e retorna com orientação, prazo e orçamento sob medida.',
   },
   {
     q: 'A Guimarães faz impressão DTF em Belo Horizonte?',
-    a: 'Sim. A Guimarães Bordados & Estampas atende em Belo Horizonte e recebe pedidos pelo WhatsApp para impressão DTF, DTF UV, bordados, estampas e personalizados.',
-  },
-  {
-    q: 'Como recebo um orçamento de impressão DTF?',
-    a: 'Você envia sua arte pelo WhatsApp com medida, quantidade e tipo de aplicação. A equipe avalia o material e retorna com orientação, prazo e orçamento sob medida.',
-  },
-  {
-    q: 'O valor muda conforme a arte?',
-    a: 'Sim. O orçamento pode variar conforme tamanho da arte, metragem, quantidade, tipo de peça, acabamento e demanda. Por isso, a avaliação é feita antes da produção.',
+    a: 'Sim. A Guimarães Bordados & Estampas atende em Belo Horizonte, com loja na Galeria Ouvidor, no Centro de BH. Consulte pelo WhatsApp as opções de retirada, entrega ou envio.',
   },
   {
     q: 'Vocês atendem revendedores e estamparias?',
@@ -26,15 +18,15 @@ const FAQS = [
   },
   {
     q: 'Posso fazer pedido pequeno?',
-    a: 'Sim. A empresa atende pedidos avulsos, personalizados e demandas recorrentes. O ideal é enviar a arte pelo WhatsApp para confirmar a melhor forma de produzir.',
+    a: 'Sim. A empresa atende pedidos avulsos, personalizados e demandas recorrentes. O ideal é enviar sua arte para avaliação.',
   },
   {
     q: 'Qual a diferença entre DTF e DTF UV?',
-    a: 'DTF é muito usado para tecidos, como camisetas e uniformes. DTF UV é indicado para personalização de superfícies rígidas e brindes, dependendo do tipo de material e aplicação.',
+    a: 'O DTF é muito usado para tecidos, como camisetas e uniformes. O DTF UV é indicado para brindes e superfícies compatíveis. A equipe pode orientar qual opção faz mais sentido para sua peça.',
   },
   {
     q: 'Preciso enviar a arte pronta?',
-    a: 'Se você já tiver a arte, envie pelo WhatsApp para avaliação. Caso precise de orientação sobre formato, tamanho ou aplicação, a equipe pode ajudar antes da produção.',
+    a: 'Se você já tiver a arte, envie pelo WhatsApp para avaliação. Caso precise de orientação sobre tamanho, formato ou aplicação, a equipe pode ajudar antes da produção.',
   },
 ]
 
@@ -101,7 +93,7 @@ export default function FAQSection() {
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight" style={{ color: '#1A1A1A' }}>
               Dúvidas frequentes sobre{' '}
               <span style={{ color: '#C6A15B' }}>
-                impressão DTF
+                DTF, DTF UV e personalizados
               </span>
             </h2>
           </div>

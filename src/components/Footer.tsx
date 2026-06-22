@@ -107,9 +107,22 @@ export default function Footer() {
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px]"
           style={{ borderTop: '1px solid rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.25)' }}>
           <p>© {year} Guimarães Bordados & Estampas. Todos os direitos reservados.</p>
-          <div className="flex items-center gap-5">
-            <a href="/politica-de-privacidade" className="hover:text-white transition-colors">Privacidade</a>
-            <a href="/termos-de-uso" className="hover:text-white transition-colors">Termos</a>
+          <div className="flex items-center gap-2 text-[12px]">
+            <span>Desenvolvido por</span>
+            <a 
+              href="https://topmarketingbh.com.br/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center hover:opacity-80 transition-opacity"
+              aria-label="Top Marketing BH"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img 
+                src="/images/topmarketinglogo.jfif" 
+                alt="Top Marketing BH" 
+                className="h-6 w-auto rounded object-contain ml-1 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </a>
           </div>
         </div>
       </div>
