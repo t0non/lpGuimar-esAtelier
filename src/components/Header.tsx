@@ -50,7 +50,7 @@ export default function Header() {
                 <img
                   src="/images/Logo_Atelier.png"
                   alt="Guimarães Atelier"
-                  className="h-[36px] lg:h-[42px] w-auto object-contain transition-transform duration-300 group-hover:opacity-90"
+                  className="h-[44px] sm:h-[52px] lg:h-[64px] w-auto object-contain transition-transform duration-300 group-hover:opacity-90"
                 />
               </a>
             </div>
