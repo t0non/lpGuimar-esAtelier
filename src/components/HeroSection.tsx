@@ -7,7 +7,7 @@ const WA_LINK =
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="relative bg-white pt-[90px] lg:pt-[100px] pb-12 overflow-hidden">
+    <section id="inicio" className="relative bg-white pt-[80px] lg:pt-[80px] pb-8 overflow-hidden">
       
       {/* Background Decorativo Suave */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
@@ -22,12 +22,12 @@ export default function HeroSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start pt-4 lg:pt-8">
 
           {/* ══════════════════════════════════════
               COLUNA ESQUERDA — COPY & CTAs
           ══════════════════════════════════════ */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4 lg:pr-8">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-3 lg:pr-8">
             
             {/* Badge */}
             <div>
