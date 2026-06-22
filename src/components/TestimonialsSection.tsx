@@ -164,6 +164,7 @@ export default function TestimonialsSection() {
             </span>
           ))}
         </div>
+        </div>
       </div>
 
       {/* Marquee — ocupa a largura total, sem container */}
