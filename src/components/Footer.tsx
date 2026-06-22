@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="w-full h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(198,161,91,0.35), transparent)' }} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-12 text-center md:text-left">
 
           {/* Coluna 1 — Marca */}
           <div className="flex flex-col gap-4">
@@ -30,7 +30,7 @@ export default function Footer() {
             <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.38)' }}>
               Bordados, estampas, impressão DTF, DTF UV e personalização sob demanda em Belo Horizonte. Atendimento pelo WhatsApp.
             </p>
-            <address className="not-italic text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.40)' }}>
+            <address className="not-italic text-sm leading-relaxed mx-auto md:mx-0 w-fit" style={{ color: 'rgba(255,255,255,0.40)' }}>
               <a
                 href="https://maps.google.com/?q=Galeria+Ouvidor+R.+São+Paulo+Loja+50A+1+andar+Centro+Belo+Horizonte+MG"
                 target="_blank"
@@ -99,7 +99,7 @@ export default function Footer() {
           <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#C6A15B' }}>
             Sobre a Guimarães
           </h3>
-          <p className="text-sm leading-relaxed max-w-4xl" style={{ color: 'rgba(255,255,255,0.35)' }}>
+          <p className="text-sm leading-relaxed max-w-4xl mx-auto md:mx-0" style={{ color: 'rgba(255,255,255,0.35)' }}>
             A Guimarães Bordados &amp; Estampas atua em Belo Horizonte com soluções de bordados, estampas, impressão DTF, DTF UV e personalização sob demanda. A empresa atende clientes que precisam produzir camisetas, uniformes, brindes, peças personalizadas, coleções de marca própria, demandas para revenda e pedidos recorrentes. O atendimento é feito pelo WhatsApp, onde o cliente envia sua arte, informa a aplicação desejada e recebe orientação, prazo e orçamento.
           </p>
         </div>

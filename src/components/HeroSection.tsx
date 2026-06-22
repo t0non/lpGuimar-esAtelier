@@ -46,7 +46,7 @@ export default function HeroSection() {
       />
 
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
           {/* ══════════════════════════════════════
@@ -57,7 +57,7 @@ export default function HeroSection() {
             {/* Badge */}
             <div>
               <span
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full"
                 style={{
                   background: 'rgba(198,161,91,0.12)',
                   color: '#C6A15B',
@@ -74,7 +74,7 @@ export default function HeroSection() {
 
             {/* H1 — direto e conversivo */}
             <h1
-              className="text-4xl sm:text-5xl lg:text-[50px] font-extrabold tracking-tight"
+              className="text-3xl sm:text-4xl lg:text-[50px] font-extrabold tracking-tight"
               style={{ color: '#111827', lineHeight: '1.10' }}
             >
               Impressão DTF e DTF UV Sob Demanda{' '}
@@ -156,7 +156,7 @@ export default function HeroSection() {
               Orçamento pelo WhatsApp&nbsp;•&nbsp;Pedidos avulsos e recorrentes&nbsp;•&nbsp;Atendimento para empresas e revendedores
             </p>
 
-            <div className="flex flex-wrap gap-3 items-center pt-3">
+            <div className="flex flex-col sm:flex-row gap-4 pt-2">
               {[
                 'Sem pedido mínimo',
                 'Orçamento na hora',
@@ -164,7 +164,7 @@ export default function HeroSection() {
               ].map((badge) => (
                 <span
                   key={badge}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold"
+                  className="inline-flex w-full sm:w-auto items-center justify-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold"
                   style={{
                     backgroundColor: 'rgba(0,0,0,0.03)',
                     color: '#4B5563',

@@ -44,7 +44,7 @@ export default function ProcessSection() {
   return (
     <section
       id="como-funciona"
-      className="py-20 sm:py-32"
+      className="py-12 sm:py-20 lg:py-32"
       style={{ backgroundColor: '#FFFFFF' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -115,7 +115,7 @@ export default function ProcessSection() {
             target="_blank"
             rel="noopener noreferrer"
             data-event="whatsapp_como_funciona"
-            className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-white transition-all duration-200 hover:-translate-y-1"
+            className="inline-flex w-full sm:w-auto justify-center items-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-white transition-all duration-200 hover:-translate-y-0.5"
             style={{
               backgroundColor: '#25D366',
               boxShadow: '0 8px 24px rgba(37,211,102,0.35)',

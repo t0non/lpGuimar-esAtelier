@@ -131,7 +131,7 @@ export default function TestimonialsSection() {
   return (
     <section
       id="avaliacoes"
-      className="py-20 sm:py-32 overflow-hidden"
+      className="py-12 sm:py-20 lg:py-32 overflow-hidden"
       style={{ backgroundColor: '#F9F8F5' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

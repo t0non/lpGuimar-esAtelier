@@ -42,7 +42,7 @@ export default function BenefitsSection() {
   return (
     <section
       id="beneficios"
-      className="py-20 sm:py-32 relative overflow-hidden"
+      className="py-12 sm:py-20 lg:py-32 relative overflow-hidden"
       style={{ backgroundColor: '#111827' }}
     >
 
@@ -114,7 +114,7 @@ export default function BenefitsSection() {
             target="_blank"
             rel="noopener noreferrer"
             data-event="whatsapp_beneficios"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-white transition-all duration-200 hover:-translate-y-0.5"
+            className="inline-flex w-full sm:w-auto justify-center items-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-white transition-all duration-200 hover:-translate-y-0.5"
             style={{
               backgroundColor: '#25D366',
               boxShadow: '0 4px 20px rgba(37,211,102,0.30)',

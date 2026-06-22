@@ -7,7 +7,7 @@ export default function FinalCTASection() {
   return (
     <section
       id="cta-final"
-      className="py-24 sm:py-32 relative overflow-hidden"
+      className="py-16 sm:py-24 lg:py-32 relative overflow-hidden"
       style={{ backgroundColor: '#FFFFFF' }}
     >
       {/* Fundo decorativo */}
@@ -43,7 +43,7 @@ export default function FinalCTASection() {
             target="_blank"
             rel="noopener noreferrer"
             data-event="whatsapp_cta_final"
-            className="inline-flex items-center gap-3 px-9 py-5 rounded-2xl font-bold text-lg text-white transition-all duration-200 hover:-translate-y-1 active:translate-y-0"
+            className="inline-flex w-full sm:w-auto justify-center items-center gap-3 px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-bold text-base sm:text-lg text-white transition-all duration-300 hover:-translate-y-1 active:translate-y-0"
             style={{
               backgroundColor: '#25D366',
               boxShadow: '0 6px 24px rgba(37,211,102,0.40), 0 2px 6px rgba(0,0,0,0.08)',
