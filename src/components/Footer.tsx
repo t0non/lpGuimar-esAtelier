@@ -50,7 +50,6 @@ export default function Footer() {
             </span>
             {[
               { label: 'Início', href: '#inicio' },
-              { label: 'Para quem é', href: '#para-quem-e' },
               { label: 'Como funciona', href: '#como-funciona' },
               { label: 'Aplicações', href: '#aplicacoes' },
               { label: 'Dúvidas frequentes', href: '#faq' },
