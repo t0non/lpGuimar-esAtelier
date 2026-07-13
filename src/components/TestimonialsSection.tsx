@@ -54,10 +54,11 @@ const ROW_2 = [
 ]
 
 /* ── Card de avaliação ── */
-function ReviewCard({ name, text, image }: { name: string; text: string; image: string }) {
+function ReviewCard({ name, text, image, 'aria-hidden': ariaHidden }: { name: string; text: string; image: string; 'aria-hidden'?: boolean | 'true' }) {
   return (
     <div
       className="flex-shrink-0 w-[300px] sm:w-[350px] rounded-2xl p-6 sm:p-7 flex flex-col"
+      aria-hidden={ariaHidden}
       style={{
         backgroundColor: '#FFFFFF',
         boxShadow: '0 2px 12px rgba(0,0,0,0.03)',
@@ -104,13 +105,10 @@ function MarqueeRow({
   direction?: 'left' | 'right'
   speed?: number
 }) {
-  // Duplicamos 3x para garantir loop sem gaps
-  const items = [...reviews, ...reviews, ...reviews]
-
+  // Primeira cópia: semântica (lida por crawlers e leitores de tela)
+  // Cópias 2 e 3: apenas visuais (aria-hidden para evitar conteúdo duplicado)
   return (
-    <div
-      className="relative overflow-hidden"
-    >
+    <div className="relative overflow-hidden">
       <div
         className="flex gap-6"
         style={{
@@ -118,8 +116,16 @@ function MarqueeRow({
           width: 'max-content',
         }}
       >
-        {items.map((review, idx) => (
-          <ReviewCard key={`${review.name}-${idx}`} {...review} />
+        {/* Cópia semântica — indexável */}
+        {reviews.map((review, idx) => (
+          <ReviewCard key={`orig-${review.name}-${idx}`} {...review} />
+        ))}
+        {/* Clones visuais — aria-hidden para evitar duplicação semântica */}
+        {reviews.map((review, idx) => (
+          <ReviewCard key={`clone1-${review.name}-${idx}`} {...review} aria-hidden />
+        ))}
+        {reviews.map((review, idx) => (
+          <ReviewCard key={`clone2-${review.name}-${idx}`} {...review} aria-hidden />
         ))}
       </div>
     </div>

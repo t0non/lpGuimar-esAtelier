@@ -23,7 +23,7 @@ export default function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Logo_Atelier.png"
-                alt="Guimarães Atelier — Impressão DTF"
+                alt="Guimarães Bordados &amp; Estampas — Impressão DTF e DTF UV em Belo Horizonte"
                 className="h-12 w-auto object-contain transition-opacity hover:opacity-80"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
@@ -48,10 +48,14 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-3">
               {[
-                { label: 'Início', href: '#inicio' },
-                { label: 'Como funciona', href: '#como-funciona' },
-                { label: 'Aplicações', href: '#aplicacoes' },
-                { label: 'Dúvidas frequentes', href: '#faq' },
+                { label: 'Início', href: '/' },
+                { label: 'DTF em BH', href: '/dtf-belo-horizonte' },
+                { label: 'DTF UV em BH', href: '/dtf-uv-belo-horizonte' },
+                { label: 'Para Revendedores', href: '/producao-dtf-para-revendedores' },
+                { label: 'Sobre', href: '/sobre' },
+                { label: 'Como funciona', href: '/#como-funciona' },
+                { label: 'Dúvidas frequentes', href: '/#faq' },
+                { label: 'Contato', href: '/contato' },
               ].map(({ label, href }) => (
                 <li key={href}>
                   <a href={href} className="text-sm hover:text-white transition-colors duration-200" style={{ color: 'rgba(255,255,255,0.45)' }}>

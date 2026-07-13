@@ -1,22 +1,23 @@
 # Guimarães Bordados & Estampas
 
-Guimarães Bordados & Estampas é uma empresa de Belo Horizonte, MG, especializada em bordados, estampas, impressão DTF, DTF UV e personalização sob demanda.
+Guimarães Bordados & Estampas (também conhecida como Guimarães Atelier) é uma empresa de Belo Horizonte, MG, com 26 anos de mercado, especializada em bordados, estampas, impressão DTF, DTF UV e personalização sob demanda.
 
 ## Serviços principais
 
-- Impressão DTF
-- DTF UV
+- Impressão DTF em Belo Horizonte
+- Impressão DTF UV em Belo Horizonte
 - Bordados personalizados
 - Estampas personalizadas
 - Camisetas personalizadas
 - Uniformes personalizados
 - Brindes personalizados
-- DTF para revenda
+- DTF para revenda e revendedores
 - DTF para estamparias
+- Produção terceirizada de DTF
 
 ## Atendimento
 
-O atendimento é feito pelo WhatsApp. O cliente envia a arte, informa medida, quantidade e aplicação desejada, e recebe orientação, prazo e orçamento sob medida.
+O atendimento é feito pelo WhatsApp. O cliente envia a arte, informa medida, quantidade e aplicação desejada, e recebe orientação, prazo e orçamento sob medida. Sem pedido mínimo.
 
 Telefone/WhatsApp: (31) 3016-1790
 
@@ -31,15 +32,21 @@ CEP: 30170-130
 
 ## Site
 
-https://guimaraesatelier.com.br
+https://www.guimaraesatelier.com.br
 
-### Seções da página
+## Páginas do site
 
-- Início: #inicio
-- Para quem é: #para-quem-e
-- Por que escolher: #beneficios
-- Como funciona: #como-funciona
-- Aplicações: #aplicacoes
-- Avaliações: #avaliacoes
-- FAQ: #faq
-- Contato final: #cta-final
+- Início: https://www.guimaraesatelier.com.br/
+- Impressão DTF em BH: https://www.guimaraesatelier.com.br/dtf-belo-horizonte
+- Impressão DTF UV em BH: https://www.guimaraesatelier.com.br/dtf-uv-belo-horizonte
+- Produção DTF para revendedores: https://www.guimaraesatelier.com.br/producao-dtf-para-revendedores
+- Sobre: https://www.guimaraesatelier.com.br/sobre
+- Contato / Orçamento: https://www.guimaraesatelier.com.br/contato
+- Blog: https://www.guimaraesatelier.com.br/blog
+
+## Artigos do blog
+
+- Diferença entre DTF e DTF UV: https://www.guimaraesatelier.com.br/blog/diferenca-entre-dtf-e-dtf-uv
+- Como terceirizar produção DTF para revendedores: https://www.guimaraesatelier.com.br/blog/dtf-para-revendedores
+- Como preparar e enviar uma arte para DTF: https://www.guimaraesatelier.com.br/blog/como-enviar-arte-para-dtf
+- Onde aplicar DTF UV: https://www.guimaraesatelier.com.br/blog/aplicacoes-dtf-uv

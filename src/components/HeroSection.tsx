@@ -51,17 +51,18 @@ export default function HeroSection() {
               className="text-[28px] sm:text-3xl md:text-[38px] lg:text-[42px] font-black tracking-tight leading-[1.15] md:max-w-xl lg:max-w-2xl"
               style={{ color: '#0f172a' }}
             >
-              DTF e DTF UV para sua empresa produzir mais{' '}
+              Impressão DTF e DTF UV{' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-green-600 font-extrabold">
-                sem investir em máquinas
-              </span>
+                em Belo Horizonte
+              </span>{' '}
+              para sua empresa produzir mais
             </h1>
 
             {/* Subheadline */}
             <p
               className="text-sm sm:text-base md:text-[17px] leading-relaxed max-w-xl text-slate-600 font-medium"
             >
-              Terceirize sua produção com quem tem 26 anos de mercado. Envie sua arte pelo WhatsApp e receba orientação, prazo e orçamento para pedidos avulsos ou recorrentes.
+              Terceirize sua produção com uma empresa que atua há 26 anos em Belo Horizonte. Atendemos marcas, empresas, revendedores e estamparias em pedidos avulsos ou recorrentes.
             </p>
 
             {/* CTAs */}
@@ -91,7 +92,7 @@ export default function HeroSection() {
 
               <a
                 href="#aplicacoes"
-                aria-label="Ver aplicações para empresas"
+                aria-label="Ver aplicações de DTF e DTF UV para empresas"
                 onClick={() => {
                   if (typeof window !== 'undefined') {
                     const dl = (window as any).dataLayer = (window as any).dataLayer || [];
@@ -110,8 +111,23 @@ export default function HeroSection() {
 
             {/* Microcopy below CTAs */}
             <p className="text-xs sm:text-sm font-semibold text-slate-400 mt-0.5">
-              Sem pedido mínimo • Atendimento direto • Demandas avulsas e recorrentes
+              Sem pedido mínimo • Atendimento direto • Pedidos avulsos e recorrentes
             </p>
+
+            {/* Links internos contextuais para páginas internas */}
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-400 mt-1">
+              <a href="/dtf-belo-horizonte" className="hover:text-emerald-600 transition-colors underline underline-offset-2">
+                Impressão DTF em BH
+              </a>
+              <span aria-hidden="true">·</span>
+              <a href="/dtf-uv-belo-horizonte" className="hover:text-emerald-600 transition-colors underline underline-offset-2">
+                DTF UV em BH
+              </a>
+              <span aria-hidden="true">·</span>
+              <a href="/producao-dtf-para-revendedores" className="hover:text-emerald-600 transition-colors underline underline-offset-2">
+                Para revendedores
+              </a>
+            </div>
 
           </div>
 
@@ -123,7 +139,7 @@ export default function HeroSection() {
             <div className="relative w-full max-w-[400px] md:max-w-none flex items-center justify-center">
               <Image
                 src="/images/Imagem primeira sessão.png"
-                alt="Composição visual de produtos personalizados com DTF e DTF UV: camiseta, polo, ecobag, copo de vidro e garrafa esportiva inox"
+                alt="Produtos personalizados com DTF e DTF UV pela Guimarães Bordados & Estampas em Belo Horizonte: camisetas, uniformes, brindes e copos personalizados"
                 width={800}
                 height={800}
                 className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.01]"
