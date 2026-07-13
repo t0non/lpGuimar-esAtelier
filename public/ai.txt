@@ -1,0 +1,5 @@
+# Configuração para AEO (Answer Engine Optimization) e IA
+
+Para acessar as informações otimizadas da Guimarães Bordados & Estampas estruturadas para LLMs, por favor leia nosso arquivo llms.txt.
+
+URL: https://guimaraesatelier.com.br/llms.txt

@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   DESIGN SYSTEM — GUIMARÃES ATELIER
+   ============================================================ */
+
+:root {
+  --color-bg: #FAFAF7;
+  --color-bg-secondary: #FFFFFF;
+  --color-text: #111111;
+  --color-text-muted: #555555;
+  --color-dark: #1A1A1A;
+  --color-gold: #C6A15B;
+  --color-gold-light: #E8C97A;
+  --color-beige: #F2EDE3;
+  --color-whatsapp: #25D366;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.05);
+  --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.08), 0 16px 40px rgba(0,0,0,0.08);
+  --radius-card: 16px;
+  --radius-btn: 10px;
+}
+
+/* ============================================================
+   BASE RESET & BODY
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Evita que o header fixo cubra o topo das seções ao clicar em âncoras */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-jakarta), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   CONTAINER PADRÃO
+   ============================================================ */
+
+.container-main {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* ============================================================
+   TIPOGRAFIA BASE
+   ============================================================ */
+
+.heading-display {
+  @apply font-extrabold tracking-tight leading-tight;
+  color: var(--color-dark);
+}
+
+.heading-xl {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight;
+}
+
+.heading-lg {
+  @apply text-3xl sm:text-4xl font-bold tracking-tight leading-tight;
+}
+
+.heading-md {
+  @apply text-2xl sm:text-3xl font-bold tracking-tight;
+}
+
+.heading-sm {
+  @apply text-xl sm:text-2xl font-semibold;
+}
+
+.body-lg {
+  @apply text-lg leading-relaxed;
+  color: var(--color-text-muted);
+}
+
+.body-base {
+  @apply text-base leading-relaxed;
+  color: var(--color-text-muted);
+}
+
+/* ============================================================
+   BOTÕES
+   ============================================================ */
+
+.btn-whatsapp {
+  @apply inline-flex items-center gap-3 font-semibold rounded-xl
+         px-6 py-4 text-base transition-all duration-200;
+  background-color: var(--color-whatsapp);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.30);
+}
+
+.btn-whatsapp:hover {
+  background-color: #20B856;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.40);
+  transform: translateY(-1px);
+}
+
+.btn-whatsapp:active {
+  transform: translateY(0);
+}
+
+.btn-ghost {
+  @apply inline-flex items-center gap-2 font-semibold rounded-xl
+         px-5 py-3 text-sm border transition-all duration-200;
+  border-color: var(--color-border);
+  color: var(--color-text);
+  background: transparent;
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-beige);
+  border-color: rgba(0,0,0,0.14);
+}
+
+/* ============================================================
+   GOLD ACCENT
+   ============================================================ */
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+.gold-divider {
+  width: 48px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--color-gold);
+  display: block;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+
+.card-base {
+  @apply rounded-2xl p-6 sm:p-8 transition-all duration-300;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.card-base:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   SEÇÕES — ESPAÇAMENTOS
+   ============================================================ */
+
+.section-base {
+  @apply py-20 sm:py-28;
+}
+
+.section-beige {
+  @apply py-20 sm:py-28;
+  background-color: var(--color-beige);
+}
+
+.section-dark {
+  @apply py-20 sm:py-28;
+  background-color: var(--color-dark);
+  color: #ffffff;
+}
+
+/* ============================================================
+   PLACEHOLDER DE SEÇÃO (etapa de base)
+   ============================================================ */
+
+.section-placeholder {
+  @apply flex flex-col items-center justify-center text-center py-24;
+  min-height: 200px;
+}
+
+.section-placeholder-label {
+  @apply text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full;
+  background-color: var(--color-beige);
+  color: var(--color-gold);
+  border: 1px dashed var(--color-gold);
+}
+
+/* ============================================================
+   BADGE / TAG
+   ============================================================ */
+
+.badge {
+  @apply inline-flex items-center gap-1.5 text-xs font-semibold
+         uppercase tracking-widest rounded-full px-3 py-1.5;
+  background-color: var(--color-beige);
+  color: var(--color-gold);
+}
+
+/* ============================================================
+   SCROLL BAR DISCRETA
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.15);
+  border-radius: 10px;
+}
+
+/* ============================================================
+   PADDING BOTTOM — evitar que botão fixo cubra conteúdo
+   ============================================================ */
+
+.has-sticky-btn {
+  @apply pb-24 md:pb-0;
+}
+
+/* ============================================================
+   SELECTION COLOR
+   ============================================================ */
+
+::selection {
+  background-color: rgba(198, 161, 91, 0.20);
+  color: var(--color-dark);
+}
+
+/* ============================================================
+   ANIMAÇÕES SUAVES
+   ============================================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.6s ease both;
+}
+
+/* Safety: se a animação não rodar, o elemento fica visível */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+
