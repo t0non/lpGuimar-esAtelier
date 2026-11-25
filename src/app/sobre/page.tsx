@@ -7,11 +7,11 @@ import StickyWhatsAppButton from '@/components/StickyWhatsAppButton'
 export const metadata: Metadata = {
   title: 'Guimarães Bordados & Estampas em Belo Horizonte | Sobre',
   description:
-    'Conheça a Guimarães Bordados & Estampas, empresa com 26 anos de atuação em Belo Horizonte especializada em bordados, estampas, DTF e DTF UV.',
+    'Conheça a Guimarães Bordados & Estampas, empresa com 26 anos de atuação em Belo Horizonte especializada em bordados, estampas e DTF têxtil.',
   alternates: { canonical: 'https://www.guimaraesatelier.com.br/sobre' },
   openGraph: {
     title: 'Sobre a Guimarães Bordados & Estampas | BH',
-    description: '26 anos de mercado em Belo Horizonte. Bordados, estampas, DTF e DTF UV sob demanda.',
+    description: '26 anos de mercado em Belo Horizonte. Bordados, estampas e DTF têxtil sob demanda.',
     url: 'https://www.guimaraesatelier.com.br/sobre',
     type: 'website',
     locale: 'pt_BR',
@@ -58,7 +58,7 @@ export default function PageSobre() {
               Conheça a Guimarães Bordados & Estampas
             </h1>
             <p className="text-base sm:text-lg leading-relaxed text-slate-600 max-w-2xl">
-              Com 26 anos de atuação em Belo Horizonte, a Guimarães Bordados & Estampas é referência em bordados personalizados, estampas, impressão DTF e DTF UV para empresas, marcas, revendedores e clientes finais.
+              Com 26 anos de atuação em Belo Horizonte, a Guimarães Bordados & Estampas é referência em bordados personalizados, estampas e impressão DTF têxtil para empresas, marcas, revendedores e clientes finais.
             </p>
           </div>
         </section>
@@ -73,7 +73,7 @@ export default function PageSobre() {
               Fundada em 1999, a Guimarães Bordados & Estampas está localizada na Galeria Ouvidor, no Centro de Belo Horizonte, e atende uma base diversa de clientes: empresas que precisam de uniformes, marcas de roupas que terceirizam a produção, revendedores de personalizados e estamparias que buscam capacidade adicional.
             </p>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Ao longo de mais de duas décadas, a empresa acompanhou a evolução das técnicas de personalização — dos bordados tradicionais às tecnologias mais recentes de impressão DTF e DTF UV — sempre mantendo o foco em atendimento direto, qualidade e flexibilidade.
+              Ao longo de mais de duas décadas, a empresa acompanhou a evolução das técnicas de personalização — dos bordados tradicionais às tecnologias mais recentes de impressão DTF têxtil — sempre mantendo o foco em atendimento direto, qualidade e flexibilidade.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               O atendimento é feito de forma direta, sem intermediários. O cliente envia a arte ou explica a demanda pelo WhatsApp, recebe orientação da equipe e, após a aprovação do orçamento, a produção é realizada conforme o pedido.
@@ -90,7 +90,6 @@ export default function PageSobre() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { t: 'Impressão DTF', d: 'Para camisetas, uniformes, bonés e peças têxteis. Saiba mais na página de DTF em BH.', href: '/dtf-belo-horizonte' },
-                { t: 'Impressão DTF UV', d: 'Para copos, garrafas, acrílico, embalagens e brindes corporativos.', href: '/dtf-uv-belo-horizonte' },
                 { t: 'Bordados personalizados', d: 'Bordados de alta qualidade para uniformes, jalecos, camisas e peças corporativas.' },
                 { t: 'Estampas personalizadas', d: 'Estampas sob demanda para marcas, lojas, revendedores e clientes finais.' },
                 { t: 'Produção terceirizada', d: 'Atendimento para revendedores e estamparias que precisam de capacidade adicional.', href: '/producao-dtf-para-revendedores' },
@@ -110,10 +109,10 @@ export default function PageSobre() {
         <section className="py-12 sm:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-              Impressão DTF e DTF UV no Centro de Belo Horizonte
+              Impressão DTF têxtil no Centro de Belo Horizonte
             </h2>
             <p className="text-base leading-relaxed text-slate-600 mb-6">
-              A Guimarães está localizada na Galeria Ouvidor, no Centro de Belo Horizonte, e atende empresas, marcas, revendedores, estamparias e clientes que precisam de produção DTF e DTF UV.
+              A Guimarães está localizada na Galeria Ouvidor, no Centro de Belo Horizonte, e atende empresas, marcas, revendedores, estamparias e clientes que precisam de produção DTF têxtil.
             </p>
             <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
               <address className="text-sm text-slate-600 not-italic leading-relaxed">
@@ -157,7 +156,6 @@ export default function PageSobre() {
             </a>
             <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm">
               <a href="/dtf-belo-horizonte" className="text-emerald-600 underline underline-offset-2 hover:text-emerald-900">DTF em BH</a>
-              <a href="/dtf-uv-belo-horizonte" className="text-emerald-600 underline underline-offset-2 hover:text-emerald-900">DTF UV em BH</a>
               <a href="/producao-dtf-para-revendedores" className="text-emerald-600 underline underline-offset-2 hover:text-emerald-900">Para Revendedores</a>
               <a href="/contato" className="text-emerald-600 underline underline-offset-2 hover:text-emerald-900">Contato</a>
             </div>

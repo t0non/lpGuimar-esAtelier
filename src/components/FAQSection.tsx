@@ -17,16 +17,16 @@ const FAQS = [
     a: 'Sim. O DTF é indicado para tecidos e peças têxteis, como camisetas, uniformes, bonés e peças personalizadas em Belo Horizonte.',
   },
   {
-    q: 'DTF UV serve para copos, garrafas e acrílico?',
-    a: 'Sim. O DTF UV é indicado para superfícies rígidas, como copos, garrafas, acrílico, embalagens, brindes e peças promocionais.',
+    q: 'Vocês fazem DTF UV (copos, garrafas, acrílico)?',
+    a: 'Não. A Guimarães trabalha somente com DTF têxtil, para tecidos e peças de roupa. Não fazemos DTF UV nem personalização de superfícies rígidas como copos, garrafas ou acrílico.',
   },
   {
     q: 'Vocês atendem empresas em Belo Horizonte?',
-    a: 'Sim. A Guimarães atende empresas em Belo Horizonte que precisam de uniformes, brindes, peças promocionais e personalização sob demanda.',
+    a: 'Sim. A Guimarães atende empresas em Belo Horizonte que precisam de uniformes, camisetas promocionais e personalização têxtil sob demanda.',
   },
   {
-    q: 'Como pedir orçamento de DTF ou DTF UV?',
-    a: 'Basta chamar no WhatsApp, enviar sua arte e informar o tipo de produto que deseja personalizar. A equipe retorna com orientação, prazo e orçamento.',
+    q: 'Como pedir orçamento de DTF?',
+    a: 'Basta chamar no WhatsApp, enviar sua arte e informar o tipo de peça que deseja personalizar. A equipe retorna com orientação, prazo e orçamento.',
   },
   {
     q: 'Preciso ter a arte pronta?',
@@ -35,10 +35,6 @@ const FAQS = [
   {
     q: 'Vocês fazem pedidos recorrentes?',
     a: 'Sim. A Guimarães atende tanto pedidos avulsos quanto demandas recorrentes para revendedores, empresas, marcas e estamparias.',
-  },
-  {
-    q: 'Qual a diferença entre DTF e DTF UV?',
-    a: 'DTF é ideal para tecidos — camisetas, uniformes, bonés e sacolas. DTF UV é ideal para superfícies rígidas — copos, garrafas, acrílico, embalagens e brindes. A Guimarães oferece os dois serviços em BH.',
   },
   {
     q: 'Tem pedido mínimo?',
@@ -109,7 +105,7 @@ export default function FAQSection() {
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight" style={{ color: '#1A1A1A' }}>
               Dúvidas frequentes sobre{' '}
               <span style={{ color: '#C6A15B' }}>
-                DTF, DTF UV e personalizados
+                DTF têxtil e personalizados
               </span>
             </h2>
           </div>

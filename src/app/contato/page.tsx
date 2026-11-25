@@ -5,13 +5,13 @@ import Header from '@/components/Header'
 import StickyWhatsAppButton from '@/components/StickyWhatsAppButton'
 
 export const metadata: Metadata = {
-  title: 'Orçamento de DTF e DTF UV em BH | Guimarães Bordados & Estampas',
+  title: 'Orçamento de DTF Têxtil em BH | Guimarães Bordados & Estampas',
   description:
-    'Envie sua arte pelo WhatsApp e solicite orçamento de DTF ou DTF UV em Belo Horizonte. Atendimento direto, sem pedido mínimo.',
+    'Envie sua arte pelo WhatsApp e solicite orçamento de DTF têxtil em Belo Horizonte. Atendimento direto, sem pedido mínimo.',
   alternates: { canonical: 'https://www.guimaraesatelier.com.br/contato' },
   openGraph: {
     title: 'Contato e Orçamento | Guimarães Bordados & Estampas',
-    description: 'Solicite orçamento de DTF ou DTF UV em BH pelo WhatsApp. Atendimento direto da equipe Guimarães.',
+    description: 'Solicite orçamento de DTF têxtil em BH pelo WhatsApp. Atendimento direto da equipe Guimarães.',
     url: 'https://www.guimaraesatelier.com.br/contato',
     type: 'website',
     locale: 'pt_BR',
@@ -79,7 +79,7 @@ export default function PageContato() {
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-slate-900 mb-6">
               Solicite um orçamento de{' '}
-              <span className="text-emerald-600">DTF ou DTF UV</span>
+              <span className="text-emerald-600">DTF têxtil</span>
             </h1>
             <p className="text-base sm:text-lg leading-relaxed text-slate-600 max-w-2xl">
               O atendimento da Guimarães é feito pelo WhatsApp. Envie sua arte, descreva o produto e a quantidade, e nossa equipe responde com orientação, prazo e orçamento.
@@ -107,7 +107,7 @@ export default function PageContato() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-emerald-500 font-bold flex-shrink-0">✓</span>
-                    Produto desejado (camiseta, copo, acrílico etc.)
+                    Peça desejada (camiseta, uniforme, boné etc.)
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-emerald-500 font-bold flex-shrink-0">✓</span>
@@ -115,7 +115,7 @@ export default function PageContato() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-emerald-500 font-bold flex-shrink-0">✓</span>
-                    Aplicação desejada: DTF (tecido) ou DTF UV (superfície rígida)
+                    Tamanho e posição da estampa na peça
                     {/* TODO: confirmar se a empresa aplica o DTF na peça do cliente */}
                   </li>
                 </ul>
@@ -181,8 +181,6 @@ export default function PageContato() {
             <p className="text-sm font-semibold text-slate-500 mb-4">Saiba mais sobre nossos serviços:</p>
             <div className="flex flex-wrap gap-3">
               <a href="/dtf-belo-horizonte" className="text-sm text-emerald-700 underline underline-offset-2 hover:text-emerald-900">Impressão DTF em BH</a>
-              <span className="text-slate-300">·</span>
-              <a href="/dtf-uv-belo-horizonte" className="text-sm text-emerald-700 underline underline-offset-2 hover:text-emerald-900">DTF UV em BH</a>
               <span className="text-slate-300">·</span>
               <a href="/producao-dtf-para-revendedores" className="text-sm text-emerald-700 underline underline-offset-2 hover:text-emerald-900">Para revendedores</a>
               <span className="text-slate-300">·</span>

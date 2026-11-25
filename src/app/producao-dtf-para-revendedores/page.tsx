@@ -153,7 +153,7 @@ export default function PageRevendedores() {
               Fornecedor de DTF no Centro de Belo Horizonte
             </h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              A Guimarães está localizada na Galeria Ouvidor, no Centro de Belo Horizonte, e atende revendedores, marcas, estamparias e clientes que precisam de produção DTF e DTF UV na região.
+              A Guimarães está localizada na Galeria Ouvidor, no Centro de Belo Horizonte, e atende revendedores, marcas, estamparias e clientes que precisam de produção DTF têxtil na região.
             </p>
             <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
               <p className="text-sm font-bold text-slate-700 mb-1">📍 Guimarães Bordados & Estampas</p>
@@ -172,8 +172,6 @@ export default function PageRevendedores() {
             <p className="text-sm font-semibold text-slate-500 mb-4">Veja também:</p>
             <div className="flex flex-wrap gap-3">
               <a href="/dtf-belo-horizonte" className="text-sm text-emerald-700 underline underline-offset-2 hover:text-emerald-900">Impressão DTF em BH</a>
-              <span className="text-slate-300">·</span>
-              <a href="/dtf-uv-belo-horizonte" className="text-sm text-emerald-700 underline underline-offset-2 hover:text-emerald-900">DTF UV em BH</a>
               <span className="text-slate-300">·</span>
               <a href="/sobre" className="text-sm text-emerald-700 underline underline-offset-2 hover:text-emerald-900">Sobre a Guimarães</a>
               <span className="text-slate-300">·</span>

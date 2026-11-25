@@ -14,33 +14,31 @@ const jakarta = Plus_Jakarta_Sans({
 ══════════════════════════════════════════════ */
 
 export const metadata: Metadata = {
-  title: 'Impressão DTF e DTF UV em BH | Guimarães Bordados e Estampas',
+  title: 'Impressão DTF Têxtil em BH | Guimarães Bordados e Estampas',
   description:
-    'Impressão DTF e DTF UV em Belo Horizonte para revendedores, empresas, estamparias, camisetas, uniformes, brindes e peças personalizadas. Peça orçamento pelo WhatsApp.',
+    'Impressão DTF têxtil em Belo Horizonte para revendedores, empresas, estamparias, camisetas, uniformes e peças personalizadas. Peça orçamento pelo WhatsApp.',
   keywords: [
     'impressão DTF em Belo Horizonte',
     'DTF BH',
     'DTF em BH',
     'impressão DTF',
-    'DTF UV',
+    'DTF têxtil',
     'DTF para camisetas',
     'DTF para uniformes',
-    'DTF para brindes',
     'DTF para revenda',
     'DTF para estamparias',
     'transfer DTF personalizado',
     'camisetas personalizadas em BH',
     'uniformes personalizados em BH',
-    'brindes personalizados em BH',
     'bordados em Belo Horizonte',
     'estampas personalizadas em BH',
     'personalização sob demanda',
     'Guimarães Bordados e Estampas',
   ],
   openGraph: {
-    title: 'Impressão DTF e DTF UV em Belo Horizonte | Guimarães Bordados & Estampas',
+    title: 'Impressão DTF Têxtil em Belo Horizonte | Guimarães Bordados & Estampas',
     description:
-      'Impressão DTF, DTF UV, bordados, camisetas, uniformes e brindes personalizados em BH. Envie sua arte pelo WhatsApp e receba orçamento sob medida.',
+      'Impressão DTF têxtil, bordados, camisetas e uniformes personalizados em BH. Envie sua arte pelo WhatsApp e receba orçamento sob medida.',
     type: 'website',
     locale: 'pt_BR',
     url: 'https://guimaraesatelier.com.br',
@@ -48,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Impressão DTF e DTF UV em BH | Guimarães Bordados & Estampas',
+    title: 'Impressão DTF Têxtil em BH | Guimarães Bordados & Estampas',
     description:
-      'DTF, bordados, camisetas, uniformes e brindes personalizados em Belo Horizonte. Orçamento pelo WhatsApp.',
+      'DTF têxtil, bordados, camisetas e uniformes personalizados em Belo Horizonte. Orçamento pelo WhatsApp.',
   },
   alternates: {
     canonical: 'https://guimaraesatelier.com.br',
@@ -81,7 +79,7 @@ const schemaLocalBusiness = {
   '@id': `${SITE_URL}/#localbusiness`,
   name: 'Guimarães Bordados & Estampas',
   description:
-    'Empresa de Belo Horizonte especializada em bordados, estampas, impressão DTF, DTF UV e personalização sob demanda para camisetas, uniformes, brindes, marcas de roupa, estamparias e revendedores.',
+    'Empresa de Belo Horizonte especializada em bordados, estampas, impressão DTF têxtil e personalização sob demanda para camisetas, uniformes, marcas de roupa, estamparias e revendedores.',
   url: SITE_URL,
   telephone: PHONE,
   image: `${SITE_URL}/images/Logo_Atelier.png`,
@@ -99,7 +97,7 @@ const schemaLocalBusiness = {
     longitude: -43.9378,
   },
   foundingYear: '1999',
-  slogan: 'Impressão DTF e DTF UV em BH para revendedores, empresas e estamparias',
+  slogan: 'Impressão DTF têxtil em BH para revendedores, empresas e estamparias',
   sameAs: [
     'https://share.google/0sWEEpk53IH2FQ1iR',
     'https://wa.me/553130161790',
@@ -119,11 +117,9 @@ const schemaLocalBusiness = {
     name: 'Serviços de personalização e impressão',
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Impressão DTF' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DTF UV' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bordados personalizados' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Camisetas personalizadas' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Uniformes personalizados' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Brindes personalizados' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DTF para revenda' } },
     ],
   },
@@ -154,13 +150,11 @@ const schemaWebSite = {
 }
 
 const schemaServices = [
-  { name: 'Impressão DTF', desc: 'Impressão DTF sob demanda para camisetas, uniformes, brindes e personalizados em Belo Horizonte.' },
-  { name: 'DTF UV', desc: 'Impressão DTF UV para personalização de superfícies rígidas, brindes e materiais especiais.' },
+  { name: 'Impressão DTF', desc: 'Impressão DTF sob demanda para camisetas, uniformes e peças têxteis em Belo Horizonte.' },
   { name: 'Bordados personalizados', desc: 'Bordados de alta qualidade para uniformes, jalecos, camisas e peças corporativas em BH.' },
   { name: 'Estampas personalizadas', desc: 'Estampas personalizadas sob demanda para marcas, lojas e revendedores.' },
   { name: 'Camisetas personalizadas', desc: 'Camisetas personalizadas com impressão DTF em Belo Horizonte para eventos, marcas e revenda.' },
   { name: 'Uniformes personalizados', desc: 'Uniformes personalizados com bordado e impressão DTF para empresas em BH.' },
-  { name: 'Brindes personalizados', desc: 'Brindes personalizados com DTF e DTF UV para campanhas, eventos e ações promocionais.' },
 ].map((s) => ({
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -191,28 +185,23 @@ const schemaFAQ = {
     },
     {
       '@type': 'Question',
-      name: 'DTF UV serve para copos, garrafas e acrílico?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sim. O DTF UV é indicado para superfícies rígidas, como copos, garrafas, acrílico, embalagens, brindes e peças promocionais.' },
+      name: 'Vocês fazem DTF UV (copos, garrafas, acrílico)?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Não. A Guimarães trabalha somente com DTF têxtil, para tecidos e peças de roupa. Não fazemos DTF UV nem personalização de superfícies rígidas como copos, garrafas ou acrílico.' },
     },
     {
       '@type': 'Question',
       name: 'Vocês atendem empresas em Belo Horizonte?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sim. A Guimarães atende empresas em Belo Horizonte que precisam de uniformes, brindes, peças promocionais e personalização sob demanda.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Sim. A Guimarães atende empresas em Belo Horizonte que precisam de uniformes, camisetas promocionais e personalização têxtil sob demanda.' },
     },
     {
       '@type': 'Question',
       name: 'Como pedir orçamento de DTF?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Basta chamar no WhatsApp, enviar sua arte e informar o tipo de produto que deseja personalizar. A equipe retorna com orientação, prazo e orçamento.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Basta chamar no WhatsApp, enviar sua arte e informar o tipo de peça que deseja personalizar. A equipe retorna com orientação, prazo e orçamento.' },
     },
     {
       '@type': 'Question',
       name: 'Vocês fazem pedidos recorrentes?',
       acceptedAnswer: { '@type': 'Answer', text: 'Sim. A Guimarães atende tanto pedidos avulsos quanto demandas recorrentes para revendedores, empresas, marcas e estamparias.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Qual a diferença entre DTF e DTF UV?',
-      acceptedAnswer: { '@type': 'Answer', text: 'DTF é ideal para tecidos como camisetas e uniformes. DTF UV é ideal para superfícies rígidas como copos, garrafas, acrílico e embalagens. A Guimarães faz os dois em BH.' },
     },
     {
       '@type': 'Question',

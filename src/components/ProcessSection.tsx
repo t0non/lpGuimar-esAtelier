@@ -3,7 +3,7 @@
 import React from 'react'
 
 const WA_LINK =
-  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20DTF%2FDTF%20UV.%20Posso%20enviar%20minha%20arte%3F'
+  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20DTF%20t%C3%AAxtil.%20Posso%20enviar%20minha%20arte%3F'
 
 const STEPS = [
   {

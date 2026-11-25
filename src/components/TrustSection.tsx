@@ -3,7 +3,7 @@
 import React from 'react'
 
 const WA_LINK =
-  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Conheci%20a%20Guimar%C3%A3es%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20de%20DTF%20ou%20DTF%20UV%20e%20solicitar%20orienta%C3%A7%C3%A3o%20e%20or%C3%A7amento.'
+  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Conheci%20a%20Guimar%C3%A3es%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20de%20DTF%20t%C3%AAxtil%20e%20solicitar%20orienta%C3%A7%C3%A3o%20e%20or%C3%A7amento.'
 
 const BENEFITS = [
   {
@@ -87,7 +87,7 @@ export default function TrustSection() {
             <span className="text-emerald-400"> mais perto da sua empresa</span>
           </h2>
           <p className="text-base sm:text-lg text-white/70 leading-relaxed font-medium max-w-2xl mx-auto">
-            DTF e DTF UV produzidos em Belo Horizonte, com atendimento direto e orientação antes de colocar seu pedido em produção.
+            DTF têxtil produzido em Belo Horizonte, com atendimento direto e orientação antes de colocar seu pedido em produção.
           </p>
         </div>
 

@@ -4,13 +4,13 @@ import React from 'react'
 import Image from 'next/image'
 
 const WA_LINK =
-  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20DTF%2FDTF%20UV.%20Posso%20enviar%20minha%20arte%3F'
+  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20DTF%20t%C3%AAxtil.%20Posso%20enviar%20minha%20arte%3F'
 
 export default function HeroSection() {
   return (
     <section
       id="inicio"
-      aria-label="Impressão DTF e DTF UV em Belo Horizonte"
+      aria-label="Impressão DTF têxtil em Belo Horizonte"
       className="bg-gradient-to-b from-slate-50 via-white to-white pt-6 pb-6 md:pt-10 md:pb-10 relative overflow-hidden flex flex-col justify-between min-h-[calc(100vh-80px)]"
     >
       {/* Decorative Glow Elements */}
@@ -34,7 +34,7 @@ export default function HeroSection() {
                 }}
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
-                DTF E DTF UV EM BH
+                DTF TÊXTIL EM BH
               </span>
               <span
                 className="inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-3.5 py-1.5 rounded-full border shadow-sm border-slate-200 bg-white text-slate-700"
@@ -51,7 +51,7 @@ export default function HeroSection() {
               className="text-[28px] sm:text-3xl md:text-[38px] lg:text-[42px] font-black tracking-tight leading-[1.15] md:max-w-xl lg:max-w-2xl"
               style={{ color: '#0f172a' }}
             >
-              Impressão DTF e DTF UV{' '}
+              Impressão DTF têxtil{' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-green-600 font-extrabold">
                 em Belo Horizonte
               </span>{' '}
@@ -92,7 +92,7 @@ export default function HeroSection() {
 
               <a
                 href="#aplicacoes"
-                aria-label="Ver aplicações de DTF e DTF UV para empresas"
+                aria-label="Ver aplicações de DTF têxtil para empresas"
                 onClick={() => {
                   if (typeof window !== 'undefined') {
                     const dl = (window as any).dataLayer = (window as any).dataLayer || [];
@@ -120,10 +120,6 @@ export default function HeroSection() {
                 Impressão DTF em BH
               </a>
               <span aria-hidden="true">·</span>
-              <a href="/dtf-uv-belo-horizonte" className="hover:text-emerald-600 transition-colors underline underline-offset-2">
-                DTF UV em BH
-              </a>
-              <span aria-hidden="true">·</span>
               <a href="/producao-dtf-para-revendedores" className="hover:text-emerald-600 transition-colors underline underline-offset-2">
                 Para revendedores
               </a>
@@ -138,10 +134,10 @@ export default function HeroSection() {
 
             <div className="relative w-full max-w-[400px] md:max-w-none flex items-center justify-center">
               <Image
-                src="/images/Imagem primeira sessão.png"
-                alt="Produtos personalizados com DTF e DTF UV pela Guimarães Bordados & Estampas em Belo Horizonte: camisetas, uniformes, brindes e copos personalizados"
-                width={800}
-                height={800}
+                src="/images/hero_dtf_textil.png"
+                alt="Impressora DTF têxtil e camisetas e camisa polo personalizadas pela Guimarães Bordados & Estampas em Belo Horizonte"
+                width={958}
+                height={938}
                 className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.01]"
                 sizes="(max-width: 768px) 360px, (max-width: 1200px) 450px, 550px"
                 priority
@@ -168,7 +164,7 @@ export default function HeroSection() {
               <svg className="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
               </svg>
-              <span className="text-xs sm:text-sm font-bold text-slate-700">DTF e DTF UV</span>
+              <span className="text-xs sm:text-sm font-bold text-slate-700">DTF têxtil</span>
             </div>
 
             <div className="flex items-center gap-2">

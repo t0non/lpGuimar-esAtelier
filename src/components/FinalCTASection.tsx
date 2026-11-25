@@ -1,7 +1,7 @@
 'use client'
 
 const WA_LINK =
-  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20DTF%2FDTF%20UV.%20Posso%20enviar%20minha%20arte%3F'
+  'https://wa.me/553130161790?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20DTF%20t%C3%AAxtil.%20Posso%20enviar%20minha%20arte%3F'
 
 export default function FinalCTASection() {
   return (
@@ -25,13 +25,13 @@ export default function FinalCTASection() {
 
           {/* Título */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight" style={{ color: '#1A1A1A' }}>
-            Pronto para produzir DTF ou DTF UV
+            Pronto para produzir DTF têxtil
             <br className="hidden sm:block" /> com a Guimarães?
           </h2>
 
           {/* Texto */}
           <p className="text-base sm:text-lg leading-relaxed max-w-lg" style={{ color: '#666666' }}>
-            Envie sua arte pelo WhatsApp e receba orientação para produzir camisetas, uniformes, brindes, embalagens e peças personalizadas sob demanda.
+            Envie sua arte pelo WhatsApp e receba orientação para produzir camisetas, uniformes, bonés e peças têxteis personalizadas sob demanda.
           </p>
 
           {/* CTA */}

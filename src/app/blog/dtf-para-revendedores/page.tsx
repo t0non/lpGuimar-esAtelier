@@ -35,7 +35,6 @@ export default function ArticleDTFRevendedores() {
               'Produção sob demanda: pague apenas pelo que usar',
               'Aumente sua capacidade sem ampliar a equipe',
               'Receba o material pronto para revenda ou aplicação',
-              'Acesso a DTF e DTF UV no mesmo fornecedor',
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
                 <span className="text-emerald-500 font-bold flex-shrink-0">✓</span>

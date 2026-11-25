@@ -247,7 +247,7 @@ export default function PageDTFBeloHorizonte() {
                 { q: 'A Guimarães faz DTF para revendedores?', a: 'Sim. A Guimarães atende revendedores, estamparias e marcas que precisam de produção DTF sob demanda, em pedidos avulsos ou recorrentes.' },
                 { q: 'Tem pedido mínimo para DTF em BH?', a: 'Não. A Guimarães atende pedidos avulsos sem quantidade mínima, além de demandas recorrentes.' },
                 { q: 'Posso terceirizar minha produção DTF com a Guimarães?', a: 'Sim. Você envia sua arte pelo WhatsApp, recebe orientação, prazo e orçamento, e a produção é feita conforme sua demanda.' },
-                { q: 'Qual a diferença entre DTF e DTF UV?', a: 'DTF é para tecidos (camisetas, uniformes, bonés). DTF UV é para superfícies rígidas (copos, garrafas, acrílico, brindes). A Guimarães oferece os dois serviços.' },
+                { q: 'Vocês fazem DTF UV?', a: 'Não. A Guimarães trabalha somente com DTF têxtil, para tecidos e peças de roupa (camisetas, uniformes, bonés). Não personalizamos copos, garrafas ou acrílico.' },
               ].map((item) => (
                 <div key={item.q} className="border-b border-slate-100 pb-6">
                   <h3 className="text-base font-bold text-slate-800 mb-2">{item.q}</h3>
@@ -263,8 +263,6 @@ export default function PageDTFBeloHorizonte() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-sm font-semibold text-slate-500 mb-4">Veja também:</p>
             <div className="flex flex-wrap gap-3">
-              <a href="/dtf-uv-belo-horizonte" className="text-sm text-emerald-700 underline underline-offset-2 hover:text-emerald-900">Impressão DTF UV em BH</a>
-              <span className="text-slate-300">·</span>
               <a href="/producao-dtf-para-revendedores" className="text-sm text-emerald-700 underline underline-offset-2 hover:text-emerald-900">Produção DTF para revendedores</a>
               <span className="text-slate-300">·</span>
               <a href="/sobre" className="text-sm text-emerald-700 underline underline-offset-2 hover:text-emerald-900">Conheça a Guimarães</a>

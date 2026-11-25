@@ -49,48 +49,6 @@ const DTF_CARDS = [
   },
 ]
 
-const DTFUV_CARDS = [
-  {
-    id: 'dtfuv-copos',
-    img: '/images/app_copos_bw.png',
-    imgAlt: 'DTF UV para copos e garrafas personalizados em BH',
-    title: 'Copos, garrafas e squeezes',
-    text: 'Personalização para ações corporativas, eventos, marcas e produtos promocionais.',
-    microtag: null,
-    waMsg: 'Olá! Vi no site a opção de DTF UV para copos e garrafas e gostaria de entender valores e produção.',
-    gtmEvent: 'click_dtfuv_copos',
-  },
-  {
-    id: 'dtfuv-acrilico',
-    img: '/images/app_acrilico_bw.png',
-    imgAlt: 'DTF UV para acrílico, placas e displays em Belo Horizonte',
-    title: 'Acrílico, placas e displays',
-    text: 'Personalização para materiais de ponto de venda, sinalização, decoração e comunicação visual.',
-    microtag: null,
-    waMsg: 'Olá! Vi no site a opção de DTF UV para acrílico e gostaria de entender valores e produção.',
-    gtmEvent: 'click_dtfuv_acrilico',
-  },
-  {
-    id: 'dtfuv-embalagens',
-    img: '/images/app_embalagens_bw.png',
-    imgAlt: 'DTF UV para embalagens personalizadas em BH',
-    title: 'Embalagens e apresentação de marca',
-    text: 'Personalize embalagens, caixas e materiais de apresentação para valorizar seus produtos.',
-    microtag: null,
-    waMsg: 'Olá! Vi no site a opção de DTF UV para embalagens e gostaria de entender valores e produção.',
-    gtmEvent: 'click_dtfuv_embalagens',
-  },
-  {
-    id: 'dtfuv-brindes',
-    img: '/images/app_brindes_bw.png',
-    imgAlt: 'DTF UV para brindes e kits corporativos em BH',
-    title: 'Brindes e kits corporativos',
-    text: 'Soluções para ações promocionais, eventos, campanhas internas e presentes empresariais.',
-    microtag: null,
-    waMsg: 'Olá! Vi no site a opção de DTF UV para brindes corporativos e gostaria de entender valores e produção.',
-    gtmEvent: 'click_dtfuv_brindes',
-  },
-]
 
 const WA_GERAL = encode('Olá! Vim pelo site e gostaria de enviar minha ideia para entender a melhor solução de produção.')
 
@@ -182,42 +140,22 @@ export default function ApplicationsSection() {
   return (
     <section
       id="aplicacoes"
-      aria-label="Aplicações de DTF e DTF UV em BH"
+      aria-label="Aplicações de DTF têxtil em BH"
       className="py-16 sm:py-24 bg-white"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-20">
 
-        {/* ── INTRO: Abertura e comparativo rápido ── */}
+        {/* ── INTRO ── */}
         <div className="max-w-3xl mx-auto text-center">
           <span className="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-widest px-4 py-2 rounded-full mb-5 border border-slate-200 bg-white text-slate-800 shadow-sm">
             APLICAÇÕES
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight leading-[1.15] mb-6 text-slate-900">
-            Uma solução para cada tipo de produto
+            DTF têxtil para roupas, uniformes e acessórios
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed text-slate-600 font-medium max-w-2xl mx-auto mb-10">
-            DTF para tecidos e roupas. DTF UV para superfícies rígidas. Envie sua arte ou explique sua necessidade e nossa equipe orienta a solução mais adequada para sua produção.
+          <p className="text-base sm:text-lg leading-relaxed text-slate-600 font-medium max-w-2xl mx-auto">
+            Trabalhamos com DTF têxtil: estampas para tecidos e peças de roupa. Envie sua arte ou explique sua necessidade e nossa equipe orienta a melhor forma de produzir.
           </p>
-
-          {/* Comparativo visual rápido */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
-            {/* DTF */}
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 flex flex-col gap-2 shadow-sm">
-              <span className="inline-flex text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full w-fit bg-slate-900 text-white mb-1">
-                DTF
-              </span>
-              <p className="text-sm font-bold text-slate-700">Para tecidos e roupas</p>
-              <p className="text-xs text-slate-500 leading-relaxed">Camisetas, uniformes, peças de moda e acessórios têxteis.</p>
-            </div>
-            {/* DTF UV */}
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 flex flex-col gap-2 shadow-sm">
-              <span className="inline-flex text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full w-fit bg-slate-900 text-white mb-1">
-                DTF UV
-              </span>
-              <p className="text-sm font-bold text-slate-700">Para superfícies rígidas</p>
-              <p className="text-xs text-slate-500 leading-relaxed">Copos, garrafas, acrílico, embalagens, displays e brindes.</p>
-            </div>
-          </div>
         </div>
 
         {/* ── BLOCO DTF ── */}
@@ -241,108 +179,56 @@ export default function ApplicationsSection() {
           </div>
         </div>
 
-        {/* ── BLOCO DTF UV ── */}
-        <div>
-          {/* Bloco header */}
-          <div className="max-w-3xl mx-auto text-center mb-10">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-widest px-4 py-2 rounded-full mb-5 bg-slate-900 text-white shadow-sm">
-              DTF UV
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight text-slate-900 mb-3">
-              DTF UV para brindes, embalagens e produtos personalizados
-            </h2>
-            <p className="text-base leading-relaxed text-slate-500 font-medium max-w-xl mx-auto">
-              Personalização para copos, garrafas, acrílico, embalagens, displays e materiais promocionais.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {DTFUV_CARDS.map((card) => (
-              <AppCard key={card.id} {...card} />
-            ))}
-          </div>
-        </div>
-
-        {/* ── BLOCO COMPARAÇÃO DTF vs DTF UV + CTA FINAL ── */}
+        {/* ── CTA FINAL DO BLOCO ── */}
         <div
-          id="dtf-vs-dtfuv"
+          id="duvida-aplicacao"
           className="rounded-3xl overflow-hidden w-full"
           style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)' }}
         >
           <div className="px-6 sm:px-10 lg:px-14 py-12 sm:py-16 flex flex-col items-center gap-10">
-
-            {/* Cabeçalho */}
             <div className="text-center max-w-2xl">
               <span className="inline-flex items-center gap-1.5 text-[10px] font-extrabold uppercase tracking-widest px-4 py-2 rounded-full mb-5 border border-white/10 text-white/60">
                 PRECISA DE AJUDA?
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-tight text-white mb-4">
-                Não sabe se precisa de DTF ou DTF UV?
+                Não sabe se sua peça é compatível com DTF?
               </h2>
               <p className="text-base text-white/70 leading-relaxed font-medium max-w-xl mx-auto">
-                Você não precisa escolher sozinho. Mostre o produto que deseja personalizar e nossa equipe orienta a solução mais adequada para sua demanda.
+                Mostre o tecido ou a peça que deseja personalizar e nossa equipe confirma se o DTF têxtil é a solução certa para sua demanda.
               </p>
             </div>
 
-            {/* Comparação em duas colunas */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
-              {/* Coluna DTF */}
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col gap-4">
-                <div>
-                  <span className="inline-flex text-[10px] font-extrabold uppercase tracking-widest px-3 py-1.5 rounded-full bg-white text-slate-900 mb-3">
-                    DTF
-                  </span>
-                  <p className="text-sm font-bold text-white/90">Para tecidos e peças têxteis</p>
-                </div>
-                <ul className="flex flex-col gap-2.5">
-                  {[
-                    { label: 'Camisetas', icon: <ShirtIcon /> },
-                    { label: 'Uniformes', icon: <TeamIcon /> },
-                    { label: 'Bonés', icon: <CapIcon /> },
-                    { label: 'Moda e peças têxteis', icon: <FabricIcon /> },
-                  ].map(({ label, icon }) => (
-                    <li key={label} className="flex items-center gap-2.5 text-sm text-white/70">
-                      <span className="w-5 h-5 flex-shrink-0 text-white/40">{icon}</span>
-                      {label}
-                    </li>
-                  ))}
-                </ul>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col gap-4 w-full max-w-md">
+              <div>
+                <span className="inline-flex text-[10px] font-extrabold uppercase tracking-widest px-3 py-1.5 rounded-full bg-white text-slate-900 mb-3">
+                  DTF TÊXTIL
+                </span>
+                <p className="text-sm font-bold text-white/90">Para tecidos e peças têxteis</p>
               </div>
-
-              {/* Coluna DTF UV */}
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col gap-4">
-                <div>
-                  <span className="inline-flex text-[10px] font-extrabold uppercase tracking-widest px-3 py-1.5 rounded-full bg-white text-slate-900 mb-3">
-                    DTF UV
-                  </span>
-                  <p className="text-sm font-bold text-white/90">Para superfícies rígidas</p>
-                </div>
-                <ul className="flex flex-col gap-2.5">
-                  {[
-                    { label: 'Copos e garrafas', icon: <CupIcon /> },
-                    { label: 'Acrílico', icon: <AcrylicIcon /> },
-                    { label: 'Embalagens', icon: <BoxIcon /> },
-                    { label: 'Brindes', icon: <GiftIcon /> },
-                    { label: 'Materiais promocionais', icon: <PromoIcon /> },
-                  ].map(({ label, icon }) => (
-                    <li key={label} className="flex items-center gap-2.5 text-sm text-white/70">
-                      <span className="w-5 h-5 flex-shrink-0 text-white/40">{icon}</span>
-                      {label}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <ul className="flex flex-col gap-2.5">
+                {[
+                  { label: 'Camisetas', icon: <ShirtIcon /> },
+                  { label: 'Uniformes', icon: <TeamIcon /> },
+                  { label: 'Bonés', icon: <CapIcon /> },
+                  { label: 'Moda e peças têxteis', icon: <FabricIcon /> },
+                ].map(({ label, icon }) => (
+                  <li key={label} className="flex items-center gap-2.5 text-sm text-white/70">
+                    <span className="w-5 h-5 flex-shrink-0 text-white/40">{icon}</span>
+                    {label}
+                  </li>
+                ))}
+              </ul>
             </div>
-
             {/* CTA do bloco */}
             <div className="flex flex-col items-center gap-4 text-center w-full max-w-md">
               <p className="text-sm text-white/60 font-medium">
                 Envie uma foto do produto, sua arte ou explique o que precisa produzir.
               </p>
               <a
-                href={encode('Olá! Vi as opções de DTF e DTF UV no site da Guimarães e gostaria de orientação para saber qual solução é mais adequada para minha demanda.')}
+                href={encode('Olá! Vi as opções de DTF têxtil no site da Guimarães e gostaria de orientação sobre a minha demanda.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => pushGtm('click_whatsapp_duvida_dtf_dtfuv')}
+                onClick={() => pushGtm('click_whatsapp_duvida_dtf')}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-bold text-sm md:text-base text-white transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
                 style={{
                   backgroundColor: '#25D366',
@@ -410,59 +296,6 @@ function FabricIcon() {
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
       <rect x="3" y="3" width="18" height="18" rx="2" />
       <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
-    </svg>
-  )
-}
-
-// ── DTF UV Icons ───────────────────────────────────────────────────────────
-function CupIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-      <path d="M17 8h1a4 4 0 0 1 0 8h-1" />
-      <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
-      <line x1="6" y1="2" x2="6" y2="4" />
-      <line x1="10" y1="2" x2="10" y2="4" />
-      <line x1="14" y1="2" x2="14" y2="4" />
-    </svg>
-  )
-}
-
-function AcrylicIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="3" width="18" height="18" rx="2" />
-      <path d="M3 9h18M9 21V9" />
-    </svg>
-  )
-}
-
-function BoxIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-      <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-      <line x1="12" y1="22.08" x2="12" y2="12" />
-    </svg>
-  )
-}
-
-function GiftIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="20 12 20 22 4 22 4 12" />
-      <rect x="2" y="7" width="20" height="5" />
-      <line x1="12" y1="22" x2="12" y2="7" />
-      <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
-      <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
-    </svg>
-  )
-}
-
-function PromoIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-      <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
-      <line x1="7" y1="7" x2="7.01" y2="7" />
     </svg>
   )
 }

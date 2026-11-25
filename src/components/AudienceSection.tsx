@@ -78,7 +78,7 @@ export default function AudienceSection() {
             </span>
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-600 max-w-xl mx-auto font-medium">
-            Produção em DTF e DTF UV sob demanda para empresas, marcas, revendedores e estamparias.
+            Produção em DTF têxtil sob demanda para empresas, marcas, revendedores e estamparias.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ export default function AudienceSection() {
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mt-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
             <span>26 anos</span>
             <span className="text-slate-300">•</span>
-            <span>DTF + DTF UV</span>
+            <span>DTF têxtil</span>
             <span className="text-slate-300">•</span>
             <span>Sem pedido mínimo</span>
             <span className="text-slate-300">•</span>

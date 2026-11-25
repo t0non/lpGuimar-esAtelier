@@ -23,13 +23,13 @@ export default function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Logo_Atelier.png"
-                alt="Guimarães Bordados &amp; Estampas — Impressão DTF e DTF UV em Belo Horizonte"
+                alt="Guimarães Bordados &amp; Estampas — Impressão DTF têxtil em Belo Horizonte"
                 className="h-12 w-auto object-contain transition-opacity hover:opacity-80"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
             </a>
             <p className="text-sm leading-relaxed max-w-sm" style={{ color: 'rgba(255,255,255,0.45)' }}>
-              Especialistas em bordados, estampas, impressão DTF e DTF UV sob demanda em Belo Horizonte. Transformando ideias em peças reais com qualidade premium.
+              Especialistas em bordados, estampas, impressão DTF têxtil sob demanda em Belo Horizonte. Transformando ideias em peças reais com qualidade premium.
             </p>
             <div className="flex items-start gap-3 mt-2 justify-center sm:justify-start text-sm w-fit" style={{ color: 'rgba(255,255,255,0.45)' }}>
               <MapPin size={18} className="mt-0.5 flex-shrink-0" style={{ color: '#C6A15B' }} />
@@ -50,7 +50,6 @@ export default function Footer() {
               {[
                 { label: 'Início', href: '/' },
                 { label: 'DTF em BH', href: '/dtf-belo-horizonte' },
-                { label: 'DTF UV em BH', href: '/dtf-uv-belo-horizonte' },
                 { label: 'Para Revendedores', href: '/producao-dtf-para-revendedores' },
                 { label: 'Sobre', href: '/sobre' },
                 { label: 'Como funciona', href: '/#como-funciona' },
@@ -105,7 +104,7 @@ export default function Footer() {
             Guimarães Bordados & Estampas
           </span>
           <p className="text-[13px] leading-relaxed max-w-4xl mx-auto sm:mx-0" style={{ color: 'rgba(255,255,255,0.25)' }}>
-            Empresa especializada em Belo Horizonte atendendo marcas, estamparias e clientes finais com bordados personalizados, impressão DTF e DTF UV. Serviço focado em qualidade sem pedido mínimo, recebendo solicitações e artes diretamente via WhatsApp para agilidade e orçamento transparente.
+            Empresa especializada em Belo Horizonte atendendo marcas, estamparias e clientes finais com bordados personalizados, impressão DTF têxtil. Serviço focado em qualidade sem pedido mínimo, recebendo solicitações e artes diretamente via WhatsApp para agilidade e orçamento transparente.
           </p>
         </div>
 
